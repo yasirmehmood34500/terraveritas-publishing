@@ -1,0 +1,32 @@
+.menu-arrow {
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+/* When collapsed (default) -> arrow points right */
+.collapsed .menu-arrow {
+  transform: rotate(0deg);
+}
+
+/* When expanded -> arrow rotates 90deg down */
+.menu-btn[aria-expanded="true"] .menu-arrow {
+  transform: rotate(90deg);
+}
+
+
+.underline-hover {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: background-size 0.3s ease;
+}
+
+.underline-hover:hover {
+  background-size: 100% 2px;
+}
+
+.issue-cover {
+  text-align: center;
+}

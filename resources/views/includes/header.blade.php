@@ -4,8 +4,8 @@
              <!-- Left side login/signup -->
              <div class="d-flex order-lg-0">
                  <a class="navbar-brand" href="{{ route('index') }}">
-                     <img src="https://dummyimage.com/100x40/cccccc/000000.png&text=100x40" alt="Logo"
-                         class="d-inline-block align-text-top">
+                     <img src="{{ asset('assets/imgs/logo.jpg') }}" alt="Logo"
+                         class="d-inline-block align-text-top header-logo">
                  </a>
              </div>
 

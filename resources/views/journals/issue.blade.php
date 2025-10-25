@@ -50,41 +50,25 @@
             </div>
             <hr>
             <div class="mt-4">
-                <div class="mb-3">
-                    <h4><a class="text-decoration-none text-dark" href="">Rethinking ESG and CSR: Advancing
-                            Transparency and Integrity in Corporate Governance</a></h4>
-                    <div class="d-flex">
-                        <span class="me-2">edited by</span>
-                        <span class="me-2">
-                            <img src="https://dummyimage.com/30x30/cccccc/000000.png&text=40x40" alt="Profile"
-                                class="rounded-circle img-fluid" style="object-fit:cover;">
-                        </span>
-                        <span class="me-2 fw-medium"><a class="text-decoration-none text-dark" href="">Ioannis
-                                Passas</a></span>
+                @foreach ($issue_papers as $key => $value)
+                    <div class="mb-3">
+                        <h4><a class="text-decoration-none text-dark" href="">{{ $value->title }}</a></h4>
+                        <div class="d-flex">
+                            <span class="me-2">edited by</span>
+                            <span class="me-2">
+                                <img src="https://dummyimage.com/30x30/cccccc/000000.png&text=40x40" alt="Profile"
+                                    class="rounded-circle img-fluid" style="object-fit:cover;">
+                            </span>
+                            <span class="me-2 fw-medium"><a class="text-decoration-none text-dark" href="">Ioannis
+                                    Passas</a></span>
+                        </div>
+                        <span>Keywords: ESG reporting standards; corporate social responsibility (CSR); transparency in
+                            corporate governance; sustainability; auditing and assurance; ethical leadership; risk
+                            management;
+                            ESG Controversies; financial performance; corporate integrity</span>
                     </div>
-                    <span>Keywords: ESG reporting standards; corporate social responsibility (CSR); transparency in
-                        corporate governance; sustainability; auditing and assurance; ethical leadership; risk management;
-                        ESG Controversies; financial performance; corporate integrity</span>
-                </div>
-                <hr>
-
-                <div class="mb-3">
-                    <h4><a class="text-decoration-none text-dark" href="">Rethinking ESG and CSR: Advancing
-                            Transparency and Integrity in Corporate Governance</a></h4>
-                    <div class="d-flex">
-                        <span class="me-2">edited by</span>
-                        <span class="me-2">
-                            <img src="https://dummyimage.com/30x30/cccccc/000000.png&text=40x40" alt="Profile"
-                                class="rounded-circle img-fluid" style="object-fit:cover;">
-                        </span>
-                        <span class="me-2 fw-medium"><a class="text-decoration-none text-dark" href="">Ioannis
-                                Passas</a></span>
-                    </div>
-                    <span>Keywords: ESG reporting standards; corporate social responsibility (CSR); transparency in
-                        corporate governance; sustainability; auditing and assurance; ethical leadership; risk management;
-                        ESG Controversies; financial performance; corporate integrity</span>
-                </div>
-                <hr>
+                    <hr>
+                @endforeach
             </div>
         </div>
     </div>

@@ -1,7 +1,7 @@
 <div class="m-3 p-3 bg-white">
     <h5>Open Access Journals</h5>
     <!-- First menu -->
-    <a class="d-block text-decoration-none menu-btn collapsed" data-bs-toggle="collapse" href="#indexingMenu" role="button"
+    {{-- <a class="d-block text-decoration-none menu-btn collapsed" data-bs-toggle="collapse" href="#indexingMenu" role="button"
         aria-expanded="false" aria-controls="indexingMenu">
         <span class="me-2 menu-arrow text-dark">►</span> Browse by Indexing
     </a>
@@ -40,24 +40,23 @@
             <li><a class="text-dark underline-hover" href="#">Public Health & Healthcare</a></li>
             <li><a class="text-dark underline-hover" href="#">Social Sciences, Arts and Humanities</a></li>
         </ul>
-    </div>
+    </div> --}}
 
     <div class="mt-3">
         <ul class="list-unstyled">
-            @for ($i = 1; $i < 5; $i++)
-                <li><img class="me-2" src="https://dummyimage.com/40x40/cccccc/000000.png&text=40x40" alt=""
-                        srcset=""><a class="text-dark underline-hover"
-                        href="{{ route('journal.index', ['abbr' => $i]) }}">Journal
-                        {{ $i }}</a></li>
+            @foreach (@$journals ?? [] as $key => $value)
+                <li><img class="me-2" style="width: 50px; height:100px;" src="{{ asset('storage/uploads/journals/') }}/{{ $value->cover_copy_img_name }}"
+                        alt="{{ $value->name }}" srcset=""><a class="text-dark underline-hover"
+                        href="{{ route('journal.index', ['abbr' => $value->abbreviation]) }}">{{ $value->name }}</a></li>
                 <hr class="mt-1 mb-1">
-            @endfor
+            @endforeach
         </ul>
     </div>
-    <a class="text-decoration-none fw-medium text-dark mt-2" href="#">Explore All Journals...</a>
+    <a class="text-decoration-none fw-medium text-dark mt-2" href="{{ route('journals') }}">Explore All Journals...</a>
 </div>
 
 <!-- Articles -->
-<div class="m-3 p-3 bg-white">
+{{-- <div class="m-3 p-3 bg-white">
     <h5>Highly Accessed Articles</h5>
     <small class="text-danger">Article</small><br>
     <small class="fw-medium p-0"><a class="text-dark underline-hover" href=""> Research on Acoustic Properties
@@ -87,4 +86,4 @@
     </div>
     <hr class="mt-2 mb-2">
     <a class="text-decoration-none fw-medium text-dark mt-2" href="#">Explore All Books...</a>
-</div>
+</div> --}}

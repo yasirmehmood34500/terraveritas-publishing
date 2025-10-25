@@ -4,7 +4,7 @@
         <!-- Artilces -->
         <div class="m-2 p-2">
             <h2 class="mb-3">MDPI Journal List</h2>
-            <h4 class="mb-3">481 journals</h4>
+            <h4 class="mb-3">{{ count($journals) }} journals</h4>
             <p class="mb-3">MDPI currently publishes 472 peer-reviewed journals, and 9 conference journals which are
                 dedicated to publishing outputs from academic conferences.</p>
 
@@ -34,30 +34,30 @@
                     <div class="col-1"><small>Current Issue</small></div>
                     <div class="col-1"><small>Upcoming</small></div>
                     <div class="col-1"><small>Total</small></div>
-                    <div class="col-1"><small>RSS</small></div>
+                    {{-- <div class="col-1"><small>RSS</small></div> --}}
                 </div>
 
                 <!-- Body -->
-                @for ($i = 1; $i <= 10; $i++)
+                @foreach ($journal_list as $key => $value)
                     <div class="row align-items-center border-bottom py-2">
-                        <div class="col-1">{{ $i }}</div>
+                        <div class="col-1">{{ $key + 1 }}</div>
                         <div class="col-2 d-flex align-items-center">
                             <img src="https://dummyimage.com/40x40/cccccc/000000.png&text=40x40" class="me-2 rounded"
                                 alt="">
-                            <a href="{{ route('journal.index', ['abbr' => $i]) }}">
-                                <small>Accounting and Auditing</small>
+                            <a href="{{ route('journal.index', ['abbr' => $value->abbreviation]) }}">
+                                <small>{{ $value->name }}</small>
                             </a>
                         </div>
-                        <div class="col-2"><small>3042-8529</small></div>
+                        <div class="col-2"><small>{{ $value->issn_print }}</small></div>
                         <div class="col-1"><small>2025</small></div>
                         <div class="col-1">-</div>
                         <div class="col-1">-</div>
                         <div class="col-1"><small>v1(1), Jun 2025</small></div>
-                        <div class="col-1">1</div>
-                        <div class="col-1">6</div>
-                        <div class="col-1"><i class="fa-solid fa-wifi"></i></div>
+                        <div class="col-1">0</div>
+                        <div class="col-1">{{ $value->journal_issue_papers_count }}</div>
+                        {{-- <div class="col-1"><i class="fa-solid fa-wifi"></i></div> --}}
                     </div>
-                @endfor
+                @endforeach
 
                 <p class="mt-5">* Proceedings series journal</p>
             </div>

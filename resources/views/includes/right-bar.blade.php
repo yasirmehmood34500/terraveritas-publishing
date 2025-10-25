@@ -69,7 +69,7 @@
 </div>
 
 <!-- Selected Special Issues -->
-<div class="m-3 p-3 bg-white">
+{{-- <div class="m-3 p-3 bg-white">
     <div>
         <h5>Selected Special Issues</h5>
         <small>Special Issue in <i>JCM</i></small><br>
@@ -146,4 +146,4 @@
                 Visual Sensors</a></small><br>
         <small class="text-muted">Collection Editors: Oscar Reinoso Garcia, Luis Payá</small><br>
     </div>
-</div>
+</div> --}}

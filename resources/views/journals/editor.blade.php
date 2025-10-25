@@ -17,95 +17,38 @@
                 </div>
             </div>
             <div class="mt-3">
-                <div class="d-flex align-items-start gap-3">
+                @foreach ($journal_editorial_boards as $key => $value)
+                    <div class="d-flex align-items-start gap-3">
 
-                    <!-- Profile Image -->
-                    <img src="https://dummyimage.com/150x150/cccccc/000000.png&text=40x40" alt="Profile"
-                        class="rounded-circle img-fluid" style="width:100px; height:100px; object-fit:cover;">
+                        <!-- Profile Image -->
+                        <img src="{{ asset('storage/uploads/editorial/') }}/{{ $value->img_name }}" alt="Profile"
+                            class="rounded-circle img-fluid" style="width:100px; height:100px; object-fit:cover;">
 
-                    <!-- Profile Info -->
-                    <div>
-                        <p class="mb-1">
-                            <a href="#" class="fw-semibold text-decoration-none text-dark">Prof. Dr. Assunta Di
-                                Vaio</a>
-                            &nbsp;
-                            <a href="#" class="text-decoration-none text-dark">Website</a>
-                        </p>
-                        <p class="fst-italic mb-1">Editor-in-Chief</p>
-                        <p class="mb-0">Department of Law, University of Naples Parthenope, Naples, Italy</p>
-                        <p class="mb-0">
-                            <span class="fw-semibold">Interests:</span> sustainability accounting; supply chain
-                            digitalization;
-                            sustainable business models; blockchain and digital platforms; carbon accounting;
-                            sustainability reporting; integrated reporting; GHG protocol
-                        </p>
-                        <p class="mb-0">
-                            <a href="#" class="fw-semibold text-decoration-none text-dark">Special Issues, Collections
-                                and Topics in MDPI journals</a>
-                        </p>
+                        <!-- Profile Info -->
+                        <div>
+                            <p class="mb-1">
+                                <a href="#" class="fw-semibold text-decoration-none text-dark">{{ $value->name }}</a>
+                                &nbsp;
+                                <a href="#" class="text-decoration-none text-dark">Website</a>
+                            </p>
+                            <p class="fst-italic mb-1">{{ @$value?->journal_editorial_board_type?->name ?? '' }}</p>
+                            <p>{!! $value->detail !!}</p>
+                            {{-- <p class="mb-0">Department of Law, University of Naples Parthenope, Naples, Italy</p>
+                            <p class="mb-0">
+                                <span class="fw-semibold">Interests:</span> sustainability accounting; supply chain
+                                digitalization;
+                                sustainable business models; blockchain and digital platforms; carbon accounting;
+                                sustainability reporting; integrated reporting; GHG protocol
+                            </p>
+                            <p class="mb-0">
+                                <a href="#" class="fw-semibold text-decoration-none text-dark">Special Issues,
+                                    Collections
+                                    and Topics in MDPI journals</a>
+                            </p> --}}
+                        </div>
                     </div>
-                </div>
-                <hr>
-
-                <div class="d-flex align-items-start gap-3">
-
-                    <!-- Profile Image -->
-                    <img src="https://dummyimage.com/150x150/cccccc/000000.png&text=40x40" alt="Profile"
-                        class="rounded-circle img-fluid" style="width:100px; height:100px; object-fit:cover;">
-
-                    <!-- Profile Info -->
-                    <div>
-                        <p class="mb-1">
-                            <a href="#" class="fw-semibold text-decoration-none text-dark">Prof. Dr. Assunta Di
-                                Vaio</a>
-                            &nbsp;
-                            <a href="#" class="text-decoration-none text-dark">Website</a>
-                        </p>
-                        <p class="fst-italic mb-1">Editor-in-Chief</p>
-                        <p class="mb-0">Department of Law, University of Naples Parthenope, Naples, Italy</p>
-                        <p class="mb-0">
-                            <span class="fw-semibold">Interests:</span> sustainability accounting; supply chain
-                            digitalization;
-                            sustainable business models; blockchain and digital platforms; carbon accounting;
-                            sustainability reporting; integrated reporting; GHG protocol
-                        </p>
-                        <p class="mb-0">
-                            <a href="#" class="fw-semibold text-decoration-none text-dark">Special Issues, Collections
-                                and Topics in MDPI journals</a>
-                        </p>
-                    </div>
-                </div>
-                <hr>
-
-                <div class="d-flex align-items-start gap-3">
-
-                    <!-- Profile Image -->
-                    <img src="https://dummyimage.com/150x150/cccccc/000000.png&text=150x150" alt="Profile"
-                        class="rounded-circle img-fluid" style="width:100px; height:100px; object-fit:cover;">
-
-                    <!-- Profile Info -->
-                    <div>
-                        <p class="mb-1">
-                            <a href="#" class="fw-semibold text-decoration-none text-dark">Prof. Dr. Assunta Di
-                                Vaio</a>
-                            &nbsp;
-                            <a href="#" class="text-decoration-none text-dark">Website</a>
-                        </p>
-                        <p class="fst-italic mb-1">Editor-in-Chief</p>
-                        <p class="mb-0">Department of Law, University of Naples Parthenope, Naples, Italy</p>
-                        <p class="mb-0">
-                            <span class="fw-semibold">Interests:</span> sustainability accounting; supply chain
-                            digitalization;
-                            sustainable business models; blockchain and digital platforms; carbon accounting;
-                            sustainability reporting; integrated reporting; GHG protocol
-                        </p>
-                        <p class="mb-0">
-                            <a href="#" class="fw-semibold text-decoration-none text-dark">Special Issues, Collections
-                                and Topics in MDPI journals</a>
-                        </p>
-                    </div>
-                </div>
-                <hr>
+                    <hr>
+                @endforeach
             </div>
         </div>
     </div>

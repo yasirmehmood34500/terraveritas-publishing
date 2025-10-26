@@ -3,13 +3,12 @@
     <div class="bg-white mt-3">
         <!-- Artilces -->
         <div class="m-2 p-2">
-            <h2 class="mb-3">MDPI Journal List</h2>
+            <h2 class="mb-3">TerraVeritas Journal List</h2>
             <h4 class="mb-3">{{ count($journals) }} journals</h4>
-            <p class="mb-3">MDPI currently publishes 472 peer-reviewed journals, and 9 conference journals which are
-                dedicated to publishing outputs from academic conferences.</p>
+            <p class="mb-3">TerraVeritas currently publishes {{ count($journals) }} peer-reviewed journals.</p>
 
             <h2 class="mt-3 mb-3">Journal Proposal</h2>
-            <p class="mb-3">MDPI launches new journals, acquires established journals, and welcomes the transfer of society
+            <p class="mb-3">TerraVeritas launches new journals, acquires established journals, and welcomes the transfer of society
                 journals from other publishers. Submit your proposal here.</p>
 
             <div class="container-fluid mb-5">
@@ -30,8 +29,8 @@
                         <input type="text" class="form-control form-control-sm mt-1">
                     </div>
                     <div class="col-1"><small>IF</small></div>
-                    {{-- <div class="col-1"><small>Cite Score</small></div> --}}
-                    <div class="col-2"><small>Current Issue</small></div>
+                    <div class="col-1"><small>Cite Score</small></div>
+                    <div class="col-1"><small>Current Issue</small></div>
                     {{-- <div class="col-1"><small>Upcoming</small></div> --}}
                     <div class="col-1"><small>Total</small></div>
                     {{-- <div class="col-1"><small>RSS</small></div> --}}
@@ -50,11 +49,11 @@
                                 <small>{{ $value->name }}</small>
                             </a>
                         </div>
-                        <div class="col-2"><small>{{ $value->issn_print }}</small></div>
-                        <div class="col-1"><small>2025</small></div>
+                        <div class="col-2"><small>{{ str_replace("ISSN (Print):","",$value->issn_print) }}</small></div>
+                        <div class="col-1"><small>2024</small></div>
                         <div class="col-1">-</div>
-                        {{-- <div class="col-1">-</div> --}}
-                        <div class="col-2"><small>v1(1), Jun 2025</small></div>
+                        <div class="col-1">-</div>
+                        <div class="col-1"><small>v. 2(1), 2024</small></div>
                         {{-- <div class="col-1">0</div> --}}
                         <div class="col-1">{{ $value->journal_issue_papers_count }}</div>
                         {{-- <div class="col-1"><i class="fa-solid fa-wifi"></i></div> --}}

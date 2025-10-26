@@ -4,17 +4,41 @@
 
             <ul>
                 <li><a class="text-decoration-none text-dark"
-                        href="{{ route('journal.index', ['abbr' => request()->route('abbr')]) }}">Index</a></li>
+                        href="{{ route('journal.index', ['abbr' => request()->route('abbr')]) }}">Home</a></li>
+
                 <li><a class="text-decoration-none text-dark"
-                        href="{{ route('journal.aim_scope', ['abbr' => request()->route('abbr')]) }}">Aim & Scope</a>
+                        href="{{ route('journal.editor', ['abbr' => request()->route('abbr')]) }}">Editorial Board</a>
+                </li>
+                {{-- <li><a class="text-decoration-none text-dark"
+                        href="{{ route('journal.aim_scope', ['abbr' => request()->route('abbr')]) }}">Aim & Scope</a> --}}
                 </li>
                 <li><a class="text-decoration-none text-dark"
-                        href="{{ route('journal.editor', ['abbr' => request()->route('abbr')]) }}">Editorial Board</a></li>
-                <li><a class="text-decoration-none text-dark"
-                        href="{{ route('journal.issue', ['abbr' => request()->route('abbr')]) }}">Issue </a></li>
-                <li><a class="text-decoration-none text-dark"
-                        href="{{ route('journal.issue', ['abbr' => request()->route('abbr')]) }}">Forthcoming Issue</a>
+                        href="{{ route('journal.index', ['abbr' => request()->route('abbr')]) }}">Guide for Authors </a>
                 </li>
+                <li><a class="text-decoration-none text-dark"
+                        href="{{ route('journal.index', ['abbr' => request()->route('abbr')]) }}">Archive</a></li>
+                <li><a class="text-decoration-none text-dark"
+                        href="{{ route('journal.issue', ['abbr' => request()->route('abbr')]) }}">Current Issue</a></li>
+                <li><a class="text-decoration-none text-dark"
+                        href="{{ route('journal.issue', ['abbr' => request()->route('abbr')]) }}">In Press</a></li>
+                <li><a class="text-decoration-none text-dark"
+                        href="{{ route('journal.index', ['abbr' => request()->route('abbr')]) }}">Journal Policy</a>
+                </li>
+                <li><a class="text-decoration-none text-dark"
+                        href="{{ route('journal.index', ['abbr' => request()->route('abbr')]) }}">Journal Reviewer's</a>
+                </li>
+                <li><a class="text-decoration-none text-dark"
+                        href="{{ route('journal.index', ['abbr' => request()->route('abbr')]) }}">Journal Imprint</a>
+                </li>
+                <li><a class="text-decoration-none text-dark"
+                        href="{{ route('journal.index', ['abbr' => request()->route('abbr')]) }}">Journal History</a>
+                </li>
+                <li><a class="text-decoration-none text-dark"
+                        href="{{ route('journal.index', ['abbr' => request()->route('abbr')]) }}">Affiliated
+                        Society</a></li>
+                <li><a class="text-decoration-none text-dark"
+                        href="{{ route('journal.index', ['abbr' => request()->route('abbr')]) }}">Track Your
+                        Submission</a></li>
             </ul>
         </div>
 

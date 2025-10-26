@@ -21,7 +21,7 @@
                     </div> --}}
 
                     <small><a class="text-dark underline-hover"
-                            href="{{ route('journal.view_paper', ['abbr' => @$value?->journal?->abbreviation, 'id' => $value->id]) }}"><b>{{ $value->title }}</b></a></small><br>
+                            href="{{ route('journal.view_paper', ['abbr' => @$value?->journal?->abbreviation ?? '', 'id' => $value->id]) }}"><b>{{ $value->title }}</b></a></small><br>
                     @php
                         $authors = str_replace(' and ', ', ', $value->authors);
                         $authorList = array_map('trim', explode(',', $authors));

@@ -17,7 +17,7 @@
                 <!-- Header -->
                 <div class="row bg-light border-bottom py-2">
                     <div class="col-1"><small>#</small></div>
-                    <div class="col-2">
+                    <div class="col-4">
                         <small>Journal Name</small>
                         <input type="text" class="form-control form-control-sm mt-1">
                     </div>
@@ -30,9 +30,9 @@
                         <input type="text" class="form-control form-control-sm mt-1">
                     </div>
                     <div class="col-1"><small>IF</small></div>
-                    <div class="col-1"><small>Cite Score</small></div>
-                    <div class="col-1"><small>Current Issue</small></div>
-                    <div class="col-1"><small>Upcoming</small></div>
+                    {{-- <div class="col-1"><small>Cite Score</small></div> --}}
+                    <div class="col-2"><small>Current Issue</small></div>
+                    {{-- <div class="col-1"><small>Upcoming</small></div> --}}
                     <div class="col-1"><small>Total</small></div>
                     {{-- <div class="col-1"><small>RSS</small></div> --}}
                 </div>
@@ -41,19 +41,21 @@
                 @foreach ($journal_list as $key => $value)
                     <div class="row align-items-center border-bottom py-2">
                         <div class="col-1">{{ $key + 1 }}</div>
-                        <div class="col-2 d-flex align-items-center">
-                            <img src="https://dummyimage.com/40x40/cccccc/000000.png&text=40x40" class="me-2 rounded"
-                                alt="">
-                            <a href="{{ route('journal.index', ['abbr' => $value->abbreviation]) }}">
+                        <div class="col-4 d-flex align-items-start">
+                            <img style="width:100px; height:100px;"
+                                src="{{ asset('storage/uploads/journals/') }}/{{ $value->cover_copy_img_name }}"
+                                class="me-2 rounded flex-shrink-0" alt="">
+                            <a href="{{ route('journal.index', ['abbr' => $value->abbreviation]) }}"
+                                class="text-decoration-none text-dark" style="word-wrap: break-word; white-space: normal;">
                                 <small>{{ $value->name }}</small>
                             </a>
                         </div>
                         <div class="col-2"><small>{{ $value->issn_print }}</small></div>
                         <div class="col-1"><small>2025</small></div>
                         <div class="col-1">-</div>
-                        <div class="col-1">-</div>
-                        <div class="col-1"><small>v1(1), Jun 2025</small></div>
-                        <div class="col-1">0</div>
+                        {{-- <div class="col-1">-</div> --}}
+                        <div class="col-2"><small>v1(1), Jun 2025</small></div>
+                        {{-- <div class="col-1">0</div> --}}
                         <div class="col-1">{{ $value->journal_issue_papers_count }}</div>
                         {{-- <div class="col-1"><i class="fa-solid fa-wifi"></i></div> --}}
                     </div>

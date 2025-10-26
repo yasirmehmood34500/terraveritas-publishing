@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+
+class JournalArchiveVolume extends Model
+{
+    protected $guarded = [];
+
+    public function journal_archive_year(): BelongsTo
+    {
+        return $this->belongsTo(JournalArchiveYear::class);
+    }
+}

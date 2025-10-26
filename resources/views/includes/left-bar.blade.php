@@ -45,18 +45,26 @@
     <div class="mt-3">
         <ul class="list-unstyled">
             @foreach (@$journals ?? [] as $key => $value)
-                <li><img class="me-2" style="width: 50px; height:100px;" src="{{ asset('storage/uploads/journals/') }}/{{ $value->cover_copy_img_name }}"
-                        alt="{{ $value->name }}" srcset=""><a class="text-dark underline-hover"
-                        href="{{ route('journal.index', ['abbr' => $value->abbreviation]) }}">{{ $value->name }}</a></li>
+                <li class="d-flex align-items-start mb-2">
+                    <img src="{{ asset('storage/uploads/journals/' . $value->cover_copy_img_name) }}"
+                        alt="" class="me-2 rounded flex-shrink-0"
+                        style="width: 50px; height: 50px; object-fit: cover;">
+                    <a href="{{ route('journal.index', ['abbr' => $value->abbreviation]) }}"
+                        class="text-dark underline-hover"
+                        style="white-space: normal; word-wrap: break-word; overflow-wrap: break-word; line-height: 1.2;">
+                        {{ $value->name }}
+                    </a>
+                </li>
                 <hr class="mt-1 mb-1">
             @endforeach
+
         </ul>
     </div>
     <a class="text-decoration-none fw-medium text-dark mt-2" href="{{ route('journals') }}">Explore All Journals...</a>
 </div>
 
 <!-- Articles -->
-{{-- <div class="m-3 p-3 bg-white">
+<div class="m-3 p-3 bg-white">
     <h5>Highly Accessed Articles</h5>
     <small class="text-danger">Article</small><br>
     <small class="fw-medium p-0"><a class="text-dark underline-hover" href=""> Research on Acoustic Properties
@@ -86,4 +94,4 @@
     </div>
     <hr class="mt-2 mb-2">
     <a class="text-decoration-none fw-medium text-dark mt-2" href="#">Explore All Books...</a>
-</div> --}}
+</div>

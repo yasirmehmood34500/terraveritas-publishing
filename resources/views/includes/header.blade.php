@@ -4,8 +4,9 @@
              <!-- Left side login/signup -->
              <div class="d-flex order-lg-0">
                  <a class="navbar-brand" href="{{ route('index') }}">
-                     <img src="{{ asset('assets/imgs/logo.jpg') }}" alt="Logo"
-                         class="d-inline-block align-text-top header-logo">
+                     {{-- <img src="{{ asset('assets/imgs/logo.jpg') }}" alt="Logo"
+                         class="d-inline-block align-text-top header-logo"> --}}
+                         Terra Veritas Publishing
                  </a>
              </div>
 

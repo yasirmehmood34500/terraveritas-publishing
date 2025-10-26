@@ -3,9 +3,9 @@
     <div class="bg-white mt-3">
         <!-- Artilces -->
         <div class="m-2 p-2">
-            <h2 class="mb-3">Volume</h2>
+            <h2 class="mb-3">Volume {{ @$volume?->vol_no ?? '' }}</h2>
             <div class="row">
-                @for ($i = 1; $i < 20; $i++)
+                @foreach ($issues as $key => $value)
                     <div class="col-md-3">
                         <div class="issue-cover">
                             <div>
@@ -14,13 +14,14 @@
                                         style="margin: 0px;" alt="Issue Cover">
                                 </a>
                             </div>
-                            <a href="{{ route('journal.issue', ['abbr' => request()->route('abbr')]) }}">
-                                <h4>Vol. 5, Iss. 1</h4>
-                                <h5>March 2017</h5>
+                            <a href="{{ route('journal.issue', ['abbr' => request()->route('abbr')]) }}"
+                                style="color: black; text-decoration:none: font-size:14px;">
+                                Iss. {{ $value->issue_no }}
+                                {{ @$value?->journal_archive_year?->yyear ?? '' }}
                             </a>
                         </div>
                     </div>
-                @endfor
+                @endforeach
             </div>
         </div>
     </div>

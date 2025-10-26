@@ -12,8 +12,12 @@
                         href="{{ route('journal.editor', ['abbr' => request()->route('abbr')]) }}">Editor</a></li>
                 <li><a class="text-decoration-none text-dark"
                         href="{{ route('journal.issue', ['abbr' => request()->route('abbr')]) }}">Issue </a></li>
+                <li><a class="text-decoration-none text-dark"
+                        href="{{ route('journal.issue', ['abbr' => request()->route('abbr')]) }}">Forthcoming Issue</a>
+                </li>
             </ul>
         </div>
+
 
 
         <div class="mt-3">
@@ -34,14 +38,14 @@
 
             <button type="button" class="btn btn-secondary w-100">Go</button>
         </div>
-
         <div class="mt-3">
-            <div><i class="fa-solid fa-chevron-right"></i> <a class="text-decoration-none text-dark"
-                    href="{{ route('journal.issue', ['abbr' => request()->route('abbr')]) }}">Forthcoming issue</a>
-            </div>
-            <div><i class="fa-solid fa-chevron-right"></i> <a class="text-decoration-none text-dark"
-                    href="{{ route('journal.issue', ['abbr' => request()->route('abbr')]) }}">Current issue</a></div>
-            <div class="mt-3"><a class="text-decoration-none text-dark"
-                    href="{{ route('journal.volume', ['abbr' => request()->route('abbr')]) }}">Vol. 1 (2025)</a></div>
+            @foreach ($volumes as $key => $value)
+                <div class="mt-3"><a class="text-decoration-none text-dark"
+                        href="{{ route('journal.volume', ['abbr' => request()->route('abbr'), 'id' => $value->id]) }}">Vol.
+                        {{ $value->vol_no }} ({{ @$value?->journal_archive_year?->yyear ?? '' }})</a>
+                </div>
+            @endforeach
+
         </div>
+
     </div>

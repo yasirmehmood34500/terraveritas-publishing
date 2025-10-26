@@ -20,7 +20,8 @@
                         </div>
                     </div> --}}
 
-                    <small><a class="text-dark underline-hover" href=""><b>{{ $value->title }}</b></a></small><br>
+                    <small><a class="text-dark underline-hover"
+                            href="{{ route('journal.view_paper', ['abbr' => @$value?->journal?->abbreviation, 'id' => $value->id]) }}"><b>{{ $value->title }}</b></a></small><br>
                     @php
                         $authors = str_replace(' and ', ', ', $value->authors);
                         $authorList = array_map('trim', explode(',', $authors));
@@ -34,10 +35,19 @@
                     @endphp
                     <small>by {!! $output !!}</small><br>
                     <small class="text-muted">{{ $value->doi_no }}</small><br>
-                    <small><b>Abstract</b>{!! $value->abstract !!}
-                        {{-- <a class="text-decoration-none fw-medium text-dark" href="">[...] Read
-                            more</a>. --}}
+                    <small style="text-align: justify; display: block;">
+                        <b>Abstract:</b>
+                        <span class="abstract-text">
+                            {{ Str::substr(strip_tags($value->abstract), 0, 300) }}
+                        </span>
+
+                        @if (strlen(strip_tags($value->abstract)) > 300)
+                            <span class="more-text d-none">{{ substr(strip_tags($value->abstract), 300) }}</span>
+                            <a href="javascript:void(0)" class="read-more text-decoration-none fw-medium text-dark">[...]
+                                Read more</a>
+                        @endif
                     </small><br>
+
                     {{-- <small>(This article belongs to the Section<a class="text-decoration-none fw-medium text-dark"
                                 href=""> Vaccine Design,
                                 Development, and Delivery</a>)</small> --}}
@@ -55,4 +65,22 @@
             {{-- <a class="text-decoration-none fw-medium text-dark mt-2" href="#">More Articles...</a> --}}
         </div>
     </div>
+@endsection
+@section('script')
+    <script>
+        $(document).ready(function() {
+            $('.read-more').on('click', function() {
+                const moreText = $(this).prev('.more-text');
+                const isHidden = moreText.hasClass('d-none');
+
+                if (isHidden) {
+                    moreText.removeClass('d-none');
+                    $(this).text(' Show less');
+                } else {
+                    moreText.addClass('d-none');
+                    $(this).text('[...] Read more');
+                }
+            });
+        });
+    </script>
 @endsection

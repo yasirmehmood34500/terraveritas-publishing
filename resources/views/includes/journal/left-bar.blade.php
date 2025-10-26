@@ -9,7 +9,7 @@
                         href="{{ route('journal.aim_scope', ['abbr' => request()->route('abbr')]) }}">Aim & Scope</a>
                 </li>
                 <li><a class="text-decoration-none text-dark"
-                        href="{{ route('journal.editor', ['abbr' => request()->route('abbr')]) }}">Editor</a></li>
+                        href="{{ route('journal.editor', ['abbr' => request()->route('abbr')]) }}">Editorial Board</a></li>
                 <li><a class="text-decoration-none text-dark"
                         href="{{ route('journal.issue', ['abbr' => request()->route('abbr')]) }}">Issue </a></li>
                 <li><a class="text-decoration-none text-dark"

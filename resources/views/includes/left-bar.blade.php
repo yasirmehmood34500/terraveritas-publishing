@@ -66,17 +66,16 @@
 <div class="m-3 p-3 bg-white">
     <h5>Highly Accessed Articles</h5>
     <small class="text-danger">Article</small><br>
-    <small class="fw-medium p-0"><a class="text-dark underline-hover" href=""> Research on Acoustic Properties
-            of Artificial Inhomogeneities in Calibration Samples for Ultrasonic Testing of Polyethylene Pipe Welds
+    <small class="fw-medium p-0"><a class="text-dark underline-hover" href=""> Application of pH Indicator Label Based on Natural Pigments From Tomato for Determination of Milk Spoilage
         </a></small>
     <div class="mt-2">
-        <small class="p-0">by <span class="fw-medium">Seong-Uk Baek</span> </small>
+        <small class="p-0">by <span class="fw-medium">Rida Afzal</span> </small>
     </div>
-    <small class="text-muted">Nutrients <span class="fw-medium">2025</span>, 17(14), 2372;</small>
+    <small class="text-muted">J. Food Proc. & Nutr. Res., <span class="fw-medium">2024</span>, 1(2):95-102;</small>
     <small><a class="fw-medium text-decoration-none text-dark"
-            href="">https://doi.org/10.3390/nu17142372</a></small>
-    <small class="text-muted">Published: 20 July 2025</small>
-    <img class="mt-2" src="https://dummyimage.com/240x300/cccccc/000000.png&text=240x300" alt="">
+            href="https://doi.org/10.22194/" target="_blank">https://doi.org/10.22194/ JFPNR /24.1013</a></small>
+    <small class="text-muted">Published: 02 Dec 2024</small>
+    <img class="mt-2" src="{{ asset('assets/imgs/access-artical.jpg') }}" style="width: 100%;" alt="">
 </div>
 
 <!-- Books -->

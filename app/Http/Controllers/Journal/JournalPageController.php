@@ -29,10 +29,12 @@ class JournalPageController extends Controller
                     ->where('journal_id', $journal->id);
             })
             ->get();
+        $journal_overviews = JournalOverview::where('journal_id', $journal->id)->get();
 
         return view('journals.index')->with([
             'journal' => $journal,
             'issue_papers' => $issue_papers,
+            'journal_overviews' => $journal_overviews,
         ]);
     }
     public function issue(Request $request, $abbr)
@@ -53,7 +55,7 @@ class JournalPageController extends Controller
     }
     public function volume(Request $request, $abbr, $id)
     {
-        $issues = JournalArchiveIssue::with('journal_archive_year')->where('journal_archive_volume_id', $id)->get();
+        $issues = JournalArchiveIssue::with('journal_archive_year', 'journal')->where('journal_archive_volume_id', $id)->get();
         return view('journals.volume')->with([
             'volume' => JournalArchiveVolume::where('id', $id)->first(),
             'issues' => $issues,

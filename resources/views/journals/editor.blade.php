@@ -4,9 +4,9 @@
         <!-- Artilces -->
         <div class="m-2 p-2">
             <h2 class="mb-3">Editorial Board</h2>
-            <p class="mb-3">Please note that the order in which the Editors appear on this page is alphabetical, and
+            {{-- <p class="mb-3">Please note that the order in which the Editors appear on this page is alphabetical, and
                 follows the structure of the editorial board presented on the MDPI website under information for editors: <a
-                    class="text-decoration-none text-dark" href="">editorial board responsibilities</a>.</p>
+                    class="text-decoration-none text-dark" href="">editorial board responsibilities</a>.</p> --}}
 
             <div class="row">
                 <div class="col-lg-6">
@@ -21,7 +21,7 @@
                     <div class="d-flex align-items-start gap-3">
 
                         <!-- Profile Image -->
-                        <img src="{{ asset('storage/uploads/editorial/') }}/{{ $value->img_name }}" alt="Profile"
+                        <img src="{{ asset('storage/uploads/editorial/') }}/{{ $value->img_name }}" alt=""
                             class="rounded-circle img-fluid" style="width:100px; height:100px; object-fit:cover;">
 
                         <!-- Profile Info -->
@@ -29,7 +29,7 @@
                             <p class="mb-1">
                                 <a href="#" class="fw-semibold text-decoration-none text-dark">{{ $value->name }}</a>
                                 &nbsp;
-                                <a href="#" class="text-decoration-none text-dark">Website</a>
+                                {{-- <a href="#" class="text-decoration-none text-dark">Website</a> --}}
                             </p>
                             <p class="fst-italic mb-1">{{ @$value?->journal_editorial_board_type?->name ?? '' }}</p>
                             <p>{!! $value->detail !!}</p>

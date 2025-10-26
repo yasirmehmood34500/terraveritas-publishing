@@ -28,15 +28,6 @@
                         href="{{ route('journal.index', ['abbr' => request()->route('abbr')]) }}">Journal Reviewer's</a>
                 </li>
                 <li><a class="text-decoration-none text-dark"
-                        href="{{ route('journal.index', ['abbr' => request()->route('abbr')]) }}">Journal Imprint</a>
-                </li>
-                <li><a class="text-decoration-none text-dark"
-                        href="{{ route('journal.index', ['abbr' => request()->route('abbr')]) }}">Journal History</a>
-                </li>
-                <li><a class="text-decoration-none text-dark"
-                        href="{{ route('journal.index', ['abbr' => request()->route('abbr')]) }}">Affiliated
-                        Society</a></li>
-                <li><a class="text-decoration-none text-dark"
                         href="{{ route('journal.index', ['abbr' => request()->route('abbr')]) }}">Track Your
                         Submission</a></li>
             </ul>

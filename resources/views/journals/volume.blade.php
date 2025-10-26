@@ -10,8 +10,8 @@
                         <div class="issue-cover">
                             <div>
                                 <a href="issue.php">
-                                    <img src="https://dummyimage.com/180x250/cccccc/000000.png&text=180x250"
-                                        style="margin: 0px;" alt="Issue Cover">
+                                    <img src="{{ asset('storage/uploads/journals/' . @$value?->journal?->cover_copy_img_name ?? '') }}"
+                                        style="margin: 0px; width: 100%;" alt="Issue Cover">
                                 </a>
                             </div>
                             <a href="{{ route('journal.issue', ['abbr' => request()->route('abbr')]) }}"

@@ -3,7 +3,11 @@
     <div class="mb-3 mt-3">
         <div class="bg-white p-2">
             <h3>{{ $journal->name }}</h3>
-            <p class="mt-3 mb-3">Accounting and Auditing is an international, peer-reviewed, open access journal on
+            @foreach ($journal_overviews as $key => $value)
+                {{-- <h4 class="mb-3">{{ $value->heading }}</h4> --}}
+                <div style="font-size: 14px; text-align: justify;" class="mb-3">{!! $value->detail !!}</div>
+            @endforeach
+            {{-- <p class="mt-3 mb-3">Accounting and Auditing is an international, peer-reviewed, open access journal on
                 informetrics published quarterly online by MDPI.</p>
 
             <ul>
@@ -14,16 +18,16 @@
                 <li><b>Recognition of Reviewers: </b> APC discount vouchers, optional signed peer review, and reviewer names
                     published annually in the journal.</li>
                 <li><b>Accounting and Auditing is a companion journal of Sustainability.</b></li>
-            </ul>
+            </ul> --}}
 
             <div>
                 <span><i class="fa-solid fa-bars"></i> <a class="text-decoration-none text-dark" href="">Imprint
                         Information</a></span>
-                <span><i class="fa-solid fa-arrow-down"></i> <a class="text-decoration-none text-dark" href="">Journal
-                        Flyer</a></span>
+                {{-- <span><i class="fa-solid fa-arrow-down"></i> <a class="text-decoration-none text-dark" href="">Journal
+                        Flyer</a></span> --}}
                 <span><i class="fa-solid fa-lock-open text-warning"></i> <a class="text-decoration-none text-warning"
                         href="">Open Access</a></span>
-                <span><b>ISSN: 3042-6618</b></span>
+                <span><b>{{ $journal->issn_online }}</b></span>
             </div>
         </div>
     </div>

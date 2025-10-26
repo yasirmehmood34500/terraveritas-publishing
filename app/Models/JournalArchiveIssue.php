@@ -12,4 +12,8 @@ class JournalArchiveIssue extends Model
     {
         return $this->belongsTo(JournalArchiveYear::class);
     }
+    public function journal(): BelongsTo
+    {
+        return $this->belongsTo(Journal::class);
+    }
 }

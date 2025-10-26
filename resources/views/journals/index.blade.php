@@ -95,7 +95,7 @@
         </div>
     </div>
 @endsection
-@section('script')
+@push('script')
     <script>
         $(document).ready(function() {
             $('.read-more').on('click', function() {
@@ -112,4 +112,4 @@
             });
         });
     </script>
-@endsection
+@endpush

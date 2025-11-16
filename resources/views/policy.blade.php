@@ -1,87 +1,12 @@
 @extends('layouts.main')
-@push('style')
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-
-        .policy-section {
-            margin-bottom: 30px;
-        }
-
-        .policy-section h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-
-        .policy-section h3 {
-            color: #34495e;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-
-        .policy-section ul {
-            margin-left: 20px;
-        }
-
-        .policy-section li {
-            margin-bottom: 10px;
-        }
-
-        .policy-section p {
-            margin-bottom: 15px;
-        }
-
-        .cc-license {
-            display: inline-block;
-            vertical-align: middle;
-        }
-
-        .form-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        .form-table td {
-            padding: 10px;
-            border: 1px solid #ddd;
-        }
-
-        .form-table td:first-child {
-            background-color: #f8f9fa;
-            font-weight: bold;
-            width: 30%;
-        }
-
-        .workflow-diagram {
-            max-width: 100%;
-            height: auto;
-            margin: 20px 0;
-        }
-
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
-@endpush
 @section('left-bar')
-    @include('includes.left-bars.journals')
+    @include('includes.left-bars.policy')
 @endsection
 @section('content')
     <div class="bg-white mt-3">
         <div class="m-2 p-2">
-            <div class="policy-section">
-                <h2>1. PUBLICATION ETHICS POLICY</h2>
+            <div class="policy-section" id="publication-ethics">
+                <h2>1. Publication Ethics Policy</h2>
 
                 <p>The authors must follow the code of conduct and guidelines of the <a href="https://publicationethics.org/"
                         target="_blank"><strong>Committee on Publication Ethics (COPE)</strong></a> when misconduct is
@@ -109,8 +34,8 @@
                     with the allegations of research misconduct according to COPE guidelines.</p>
             </div>
 
-            <div class="policy-section">
-                <h2>2. EDITORIAL PROCEDURE AND PEER-REVIEW POLICY</h2>
+            <div class="policy-section" id="editorial-procedure">
+                <h2>2. Editorial Procedure and Peer-Review Policy</h2>
 
                 <p>The Editor-in-Chief and Managing Editor are responsible for ensuring that all manuscripts meet the
                     academic standards fit for publication and are published in a timely fashion. The editors oversee each
@@ -189,8 +114,8 @@
                     the authors, final corrections, pagination, and publication on the journal website.</p>
             </div>
 
-            <div class="policy-section">
-                <h2>3. AI POLICY</h2>
+            <div class="policy-section" id="ai-policy">
+                <h2>3. AI Policy</h2>
 
                 <p>Authors should follow <a href="https://publicationethics.org/cope-position-statements/ai-author"
                         target="_blank"><strong>COPE guidelines</strong></a> and disclose in their manuscript the use of AI
@@ -210,8 +135,8 @@
                     disclose, there is no need to add a statement.</p>
             </div>
 
-            <div class="policy-section">
-                <h2>4. CORRECTIONS AND RETRACTIONS POLICY</h2>
+            <div class="policy-section" id="corrections-retractions">
+                <h2>4. Corrections and Retractions Policy</h2>
 
                 <p>A clear policy regarding corrections and retractions is defined which differentiate among Addendum,
                     Erratum, Corrections, Retractions (or Partial Retractions), and Comments.</p>
@@ -263,8 +188,8 @@
                     concern and what actions, if any, are in progress.</p>
             </div>
 
-            <div class="policy-section">
-                <h2>5. ARCHIVING POLICY</h2>
+            <div class="policy-section" id="archiving-policy">
+                <h2>5. Archiving Policy</h2>
 
                 <p>The Editorial office is committed to the permanent availability and preservation of scholarly research
                     with <a href="https://archive.org/details/@journal_of_global_innovations_in_agricultural_sciences_jgias"
@@ -274,8 +199,8 @@
                     institutional repositories or libraries without requiring permission from the journal or publisher.</p>
             </div>
 
-            <div class="policy-section">
-                <h2>6. REPOSITORY POLICY</h2>
+            <div class="policy-section" id="repository-policy">
+                <h2>6. Repository Policy</h2>
 
                 <p>We support authors in letting people know about the work that they have published through Open Access
                     under a <a href="https://creativecommons.org/about/cclicenses"
@@ -286,8 +211,8 @@
                     or acquire an ORCiD via the submission process.</p>
             </div>
 
-            <div class="policy-section">
-                <h2>7. ADVERTISING POLICY</h2>
+            <div class="policy-section" id="advertising-policy">
+                <h2>7. Advertising Policy</h2>
 
                 <ul>
                     <li>The editorial decisions are independent of advertisements and sponsored publications. The decision
@@ -308,8 +233,8 @@
                 </ul>
             </div>
 
-            <div class="policy-section">
-                <h2>8. MARKETING POLICY</h2>
+            <div class="policy-section" id="marketing-policy">
+                <h2>8. Marketing Policy</h2>
 
                 <p>To ensure that all communications representing the journal are of high quality, consistent and accurate,
                     conform to policy approved by the <a href="https://societyfia.org/" target="_blank"><strong>Society for
@@ -317,8 +242,8 @@
                     the policy that all communications be reviewed and approved by the Editorial office.</p>
             </div>
 
-            <div class="policy-section">
-                <h2>9. PLAGIARISM POLICY</h2>
+            <div class="policy-section" id="plagiarism-policy">
+                <h2>9. Plagiarism Policy</h2>
 
                 <p>The journal uses plagiarism detection software <a href="https://www.turnitin.com/"
                         target="_blank"><strong>Turnitin</strong></a> to screen the submissions. If plagiarism is
@@ -327,8 +252,8 @@
                     plagiarism guidelines.</p>
             </div>
 
-            <div class="policy-section">
-                <h2>10. AUTHORSHIP ISSUES OR DISPUTES</h2>
+            <div class="policy-section" id="authorship-issues">
+                <h2>10. Authorship Issues or Disputes</h2>
 
                 <p>In the case of an authorship dispute during peer review or after acceptance and publication, the
                     Editorial office will not be able to investigate or adjudicate. Authors will be asked to resolve the
@@ -337,8 +262,8 @@
                     institution(s) and abide by its guidelines.</p>
             </div>
 
-            <div class="policy-section">
-                <h2>11. COPYRIGHT AND LICENSE TERM <span class="cc-license">🅭🅯</span></h2>
+            <div class="policy-section" id="copyright-license">
+                <h2>11. Copyright and License Term <span class="cc-license">🅭🅯</span></h2>
 
                 <p>We publish Open Access articles under the <a href="https://creativecommons.org/about/cclicenses/"
                         target="_blank"><strong>Creative Commons Attribution License.</strong></a> Authors of open access
@@ -346,8 +271,8 @@
                     disseminate their work.</p>
             </div>
 
-            <div class="policy-section">
-                <h2>12. AUTHOR NAME CHANGE POLICY</h2>
+            <div class="policy-section" id="author-name-change">
+                <h2>12. Author Name Change Policy</h2>
 
                 <p>Changes in authorship, including the addition of authors, the removal of authors, or the reordering of
                     authors, must comply with our authorship criteria. In case of any change of authorship, the

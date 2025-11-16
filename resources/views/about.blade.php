@@ -1,97 +1,4 @@
 @extends('layouts.main')
-@push('style')
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.8;
-            color: #333;
-        }
-
-        .overview-section {
-            margin-bottom: 40px;
-        }
-
-        .overview-section h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            font-size: 1.8em;
-        }
-
-        .overview-section p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-
-        .hero-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 40px;
-            border-radius: 10px;
-            margin-bottom: 40px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .hero-section h2 {
-            color: white;
-            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-            padding-bottom: 15px;
-            margin-bottom: 20px;
-            font-size: 2em;
-        }
-
-        .hero-section p {
-            font-size: 1.05em;
-            line-height: 1.8;
-            text-align: justify;
-        }
-
-        .content-card {
-            background-color: #ffffff;
-            padding: 30px;
-            border-radius: 8px;
-            margin-bottom: 25px;
-            border-left: 4px solid #3498db;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-        }
-
-        .content-card h2 {
-            color: #2c3e50;
-            margin-top: 0;
-            margin-bottom: 15px;
-            font-size: 1.6em;
-            border-bottom: none;
-        }
-
-        .content-card p {
-            margin-bottom: 12px;
-            color: #555;
-        }
-
-        .highlight-text {
-            background-color: #fff9e6;
-            padding: 20px;
-            border-radius: 5px;
-            border-left: 4px solid #f39c12;
-            margin-bottom: 20px;
-        }
-
-        .mission-vision {
-            background-color: #e8f4f8;
-            padding: 25px;
-            border-radius: 8px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-
-        .mission-vision p {
-            margin-bottom: 10px;
-            font-size: 1.05em;
-            font-weight: 500;
-        }
-    </style>
-@endpush
 @section('left-bar')
     @include('includes.left-bars.about')
 @endsection
@@ -101,7 +8,7 @@
         <div class="m-2 p-2">
             <h2 class="mb-3">About</h2>
 
-            <div class="hero-section">
+            <div class="hero-section" id="overview">
                 <h2>Overview</h2>
 
                 <p>TerraVeritas Publishing is a global open-access publisher of peer-reviewed online journals, dedicated to
@@ -132,7 +39,7 @@
             </div>
 
             <div class="overview-section">
-                <div class="content-card">
+                <div class="content-card" id="our-company">
                     <h2>Our Company</h2>
 
                     <p>TerraVeritas Publishing is one of the fastest-growing academic publishers, committed to making
@@ -140,7 +47,7 @@
                         publishing open-access research and hosting hundreds of journal articles online.</p>
                 </div>
 
-                <div class="content-card">
+                <div class="content-card" id="our-purpose">
                     <h2>Our Purpose</h2>
 
                     <p>Our purpose is to drive human progress through the power of knowledge. We value diverse perspectives
@@ -151,7 +58,7 @@
                         make a difference.</p>
                 </div>
 
-                <div class="content-card">
+                <div class="content-card" id="our-authors">
                     <h2>Our Authors</h2>
 
                     <p>We work alongside top authors and researchers to bring ideas to life. Our diverse network of experts
@@ -159,7 +66,7 @@
                         journal collection showcasing the work of the world's influential thinkers and scholars.</p>
                 </div>
 
-                <div class="content-card">
+                <div class="content-card" id="our-people">
                     <h2>Our People</h2>
 
                     <p>We are looking for partners with exceptional talent to drive meaningful change in the world. At
@@ -168,7 +75,7 @@
                         team member can succeed. No matter who you are, there's a place for you here.</p>
                 </div>
 
-                <div class="content-card">
+                <div class="content-card" id="our-impact">
                     <h2>Our Impact</h2>
 
                     <p>We aim to be a driving force for positive change—promoting knowledge, equity, and sustainability in

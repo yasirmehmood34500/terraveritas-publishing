@@ -51,10 +51,10 @@
                         Guidelines
                     </h6>
 
-                    <a href="" class="text-decoration text-white"> For Authors</a><br>
+                    <a href="{{ route('guide_for_author') }}" class="text-decoration text-white"> For Authors</a><br>
 
 
-                    <a href="" class="text-decoration text-white">For Reviewers</a><br>
+                    <a href="{{ route('information_for_reviewer') }}" class="text-decoration text-white">For Reviewers</a><br>
 
 
                     <a href="" class="text-decoration text-white">For Editors</a><br>

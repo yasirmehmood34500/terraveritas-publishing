@@ -5,7 +5,7 @@
 @section('content')
     <div class="bg-white mt-3">
         <div class="m-2 p-2">
-            <h2 id="submission-checklist">SUBMISSION CHECKLIST</h2>
+            <h2 id="submission-checklist">Submission Checklist</h2>
             <p>Please:</p>
             <ul>
                 <li>Read the Aims & Scope to gain an overview and assess if your manuscript is suitable for this journal.</li>

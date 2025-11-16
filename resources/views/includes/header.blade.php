@@ -35,16 +35,25 @@
                 <ul class="navbar-nav mb-2 mb-lg-0 text-center">
                     <li class="nav-item"><a class="nav-link active" href="{{ route('index') }}">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('journals') }}">Journals</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('information_for_reviewer') }}">For
+                            Reviewer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('guide_for_author') }}">Guide for Author</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('policy') }}">Policy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('editorial_support') }}">Editorial
+                            Support</a></li>
+                    {{-- <li class="nav-item"><a class="nav-link" href="#">Services</a></li> --}}
+                    <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">About</a></li>
                 </ul>
             </div>
 
-            <!-- Right side logo -->
-            <div class="order-lg-2">
-                <a href="#" class="btn btn-outline-primary btn-login">Login</a>
-                <a href="#" class="btn btn-primary btn-signup">Signup</a>
-            </div>
+            @if (request()->route('abbr'))
+                <!-- Right side logo -->
+                <div class="order-lg-2">
+                    <a href="#" class="btn btn-outline-primary btn-login">Login</a>
+                    <a href="#" class="btn btn-primary btn-signup">Signup</a>
+                </div>
+            @endif
         </div>
     </nav>
 </div>

@@ -1,4 +1,7 @@
 @extends('layouts.main')
+@section('left-bar')
+    @include('includes.left-bars.index')
+@endsection
 @section('content')
     <div class="bg-white mt-3">
         <!-- Slider -->

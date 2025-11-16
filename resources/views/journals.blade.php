@@ -1,4 +1,7 @@
 @extends('layouts.main')
+@section('left-bar')
+    @include('includes.left-bars.journals')
+@endsection
 @section('content')
     <div class="bg-white mt-3">
         <!-- Artilces -->
@@ -18,15 +21,15 @@
                     <div class="col-1"><small>#</small></div>
                     <div class="col-4">
                         <small>Journal Name</small>
-                        <input type="text" class="form-control form-control-sm mt-1">
+                        {{-- <input type="text" class="form-control form-control-sm mt-1"> --}}
                     </div>
                     <div class="col-2">
                         <small>ISSN</small>
-                        <input type="text" class="form-control form-control-sm mt-1">
+                        {{-- <input type="text" class="form-control form-control-sm mt-1"> --}}
                     </div>
                     <div class="col-1">
                         <small>Launched</small>
-                        <input type="text" class="form-control form-control-sm mt-1">
+                        {{-- <input type="text" class="form-control form-control-sm mt-1"> --}}
                     </div>
                     <div class="col-1"><small>IF</small></div>
                     <div class="col-1"><small>Cite Score</small></div>

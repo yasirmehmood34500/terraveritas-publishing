@@ -27,11 +27,7 @@
         <div class="row bg-light">
             <!-- Left Side -->
             <div class="col-lg-3">
-                @if (request()->route()->getName() == 'journals')
-                    @include('includes.left-bar-2')
-                @else
-                    @include('includes.left-bar')
-                @endif
+                @yield('left-bar')
             </div>
 
             <!-- Center Content -->

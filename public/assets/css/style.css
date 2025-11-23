@@ -40,3 +40,8 @@
   top: 20px;
   align-self: flex-start;
 }
+
+.title-paper:hover {
+  color: rgb(83, 121, 83) !important;
+  text-decoration: underline;
+}

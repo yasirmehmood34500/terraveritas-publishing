@@ -52,7 +52,7 @@
                             </div>
                         </div> --}}
 
-                        <small><a class="text-decoration-none text-dark"
+                        <small class="title-paper"><a class="text-decoration-none text-dark title-paper"
                                 href="{{ route('journal.view_paper', ['abbr' => request()->route('abbr'), 'id' => $value->id]) }}"><b>{{ $value->title }}</b></a></small><br>
                         @php
                             $authors = str_replace(' and ', ', ', $value->authors);

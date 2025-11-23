@@ -35,15 +35,48 @@
                 <ul class="navbar-nav mb-2 mb-lg-0 text-center">
                     <li class="nav-item"><a class="nav-link active" href="{{ route('index') }}">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('journals') }}">Journals</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('guide_for_author') }}">For Author</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            For Authors
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="{{ route('guide_for_author') }}">Guide for Author</a>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('information_for_reviewer') }}">For
-                            Reviewer</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            For Reviewer
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="{{ route('information_for_reviewer') }}">Guide for
+                                    Reviewer</a></li>
+                        </ul>
+                    </li>
 
-                    <li class="nav-item"><a class="nav-link" href="{{ route('editorial_support') }}">Editorial
-                            Support</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('policy') }}">Policy</a></li>
-                    {{-- <li class="nav-item"><a class="nav-link" href="#">Services</a></li> --}}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Editorial
+                            Support
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="{{ route('editorial_support') }}">Editorial
+                                    Support</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Policy
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="{{ route('policy') }}">Policy</a></li>
+                        </ul>
+                    </li>
+
                     <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">About</a></li>
                 </ul>
             </div>

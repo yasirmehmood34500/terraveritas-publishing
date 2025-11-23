@@ -63,7 +63,7 @@
 </div>
 
 <!-- Articles -->
-<div class="m-3 p-3 bg-white">
+{{-- <div class="m-3 p-3 bg-white">
     <h5>Highly Accessed Articles</h5>
     <small class="text-danger">Article</small><br>
     <small class="fw-medium p-0"><a class="text-dark underline-hover" href=""> Application of pH Indicator Label Based on Natural Pigments From Tomato for Determination of Milk Spoilage
@@ -76,7 +76,7 @@
             href="https://doi.org/10.22194/" target="_blank">https://doi.org/10.22194/ JFPNR /24.1013</a></small>
     <small class="text-muted">Published: 02 Dec 2024</small>
     <img class="mt-2" src="{{ asset('assets/imgs/access-artical.jpg') }}" style="width: 100%;" alt="">
-</div>
+</div> --}}
 
 <!-- Books -->
 <div class="m-3 p-3 bg-white">

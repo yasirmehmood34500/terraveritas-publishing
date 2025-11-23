@@ -43,6 +43,9 @@
                 <a class="btn btn-info fw-medium text-dark mt-2"
                     href="https://control.terraveritaspublishing.com/upload/{{ request()->route('abbr', 'NNNN') }}/issue/{{ $paper->file_name }}">Download
                     PDF</a>
+                    <a class="btn btn-primary fw-medium text-dark mt-2"
+                    href="https://control.terraveritaspublishing.com/upload/{{ request()->route('abbr', 'NNNN') }}/issue/{{ $paper->file_xml }}">Download
+                    XML</a>
             </div>
         </div>
     </div>

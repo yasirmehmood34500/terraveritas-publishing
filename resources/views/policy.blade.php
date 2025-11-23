@@ -1,6 +1,9 @@
 @extends('layouts.main')
 @section('left-bar')
     @include('includes.left-bars.policy')
+    @if (request()->route('abbr'))
+        @include('includes.journal.left-bar')
+    @endif
 @endsection
 @section('content')
     <div class="bg-white mt-3">

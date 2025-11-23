@@ -20,6 +20,9 @@ Route::prefix('journal/{abbr}')->name('journal.')->controller(JournalPageControl
     Route::get('issue/{issue_id?}', 'issue')->name('issue');
     Route::get('volume/{id}', 'volume')->name('volume');
     Route::get('editor', 'editor')->name('editor');
+    Route::get('information-for-reviewer', 'information_for_reviewer')->name('information_for_reviewer');
+    Route::get('guide-for-reviewer', 'guide_for_author')->name('guide_for_author');
+    Route::get('policy', 'policy')->name('policy');
     Route::get('aim-scope', 'aim_scope')->name('aim_scope');
     Route::get('imprint', 'imprint')->name('imprint');
     Route::get('view-paper/{id}', 'view_paper')->name('view_paper');

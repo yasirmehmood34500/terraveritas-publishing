@@ -11,27 +11,28 @@
                             href="{{ route('journal.editor', ['abbr' => request()->route('abbr')]) }}">Editorial
                             Board</a>
                     </li>
-                    {{-- <li><a class="text-decoration-none text-dark"
-                        href="{{ route('journal.aim_scope', ['abbr' => request()->route('abbr')]) }}">Aim & Scope</a> --}}
-                    </li>
-                    <li><a class="text-decoration-none text-dark" href="{{ route('guide_for_author') }}">Guide for Authors
-                        </a>
                     </li>
                     <li><a class="text-decoration-none text-dark"
-                            href="{{ route('journal.index', ['abbr' => request()->route('abbr')]) }}">Archive</a></li>
+                            href="{{ route('journal.guide_for_author', ['abbr' => request()->route('abbr')]) }}">Guide
+                            for Authors</a></li>
+                    {{-- <li><a class="text-decoration-none text-dark"
+                            href="{{ route('journal.index', ['abbr' => request()->route('abbr')]) }}">Archive</a></li> --}}
                     <li><a class="text-decoration-none text-dark"
                             href="{{ route('journal.issue', ['abbr' => request()->route('abbr')]) }}">Current Issue</a>
                     </li>
                     <li><a class="text-decoration-none text-dark"
                             href="{{ route('journal.issue', ['abbr' => request()->route('abbr')]) }}">In Press</a></li>
-                    <li><a class="text-decoration-none text-dark" href="{{ route('policy') }}">Journal Policy</a>
+                    <li><a class="text-decoration-none text-dark"
+                            href="{{ route('journal.policy', ['abbr' => request()->route('abbr')]) }}">Journal
+                            Policy</a></li>
                     </li>
                     <li><a class="text-decoration-none text-dark"
                             href="{{ route('journal.imprint', ['abbr' => request()->route('abbr')]) }}">Journal
                             Imprint</a>
                     </li>
-                    <li><a class="text-decoration-none text-dark" href="{{ route('information_for_reviewer') }}">Journal
-                            Reviewer's</a>
+                    <li><a class="text-decoration-none text-dark"
+                            href="{{ route('journal.information_for_reviewer', ['abbr' => request()->route('abbr')]) }}">Journal
+                            Reviewer's</a></li>
                     </li>
                     <li><a class="text-decoration-none text-dark"
                             href="{{ route('journal.index', ['abbr' => request()->route('abbr')]) }}">Track Your
@@ -69,8 +70,10 @@
                 @endforeach
 
             </div>
+            <hr>
             <div>
-                <img src="https://control.terraveritaspublishing.com/upload/{{ request()->route('abbr','NNNN') }}/img/{{ @$journal->cover_copy_img_name }}" style="width: 90%; height: 250px;" alt="Cover Page">
+                <img src="https://control.terraveritaspublishing.com/upload/{{ request()->route('abbr', 'NNNN') }}/img/{{ @$journal->cover_copy_img_name }}"
+                    style="width: 90%; height: 250px;" alt="Cover Page">
             </div>
 
         </div>

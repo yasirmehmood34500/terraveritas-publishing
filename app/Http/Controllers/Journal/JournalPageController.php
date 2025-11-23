@@ -43,7 +43,7 @@ class JournalPageController extends Controller
     public function issue(Request $request, $abbr, int $issue_id = 0)
     {
         $journal = Journal::where('abbreviation', $abbr)->firstOrFail();
-        $issue_papers = JournalIssuePaper::with(['journal_archive_volume','journal_archive_issue'])->where('journal_id', $journal->id);
+        $issue_papers = JournalIssuePaper::with(['journal_archive_volume', 'journal_archive_issue'])->where('journal_id', $journal->id);
         $issue_heading = "";
         if ((int) $issue_id > 0) {
             $issue_papers = $issue_papers->where('journal_archive_issue_id', $issue_id);
@@ -60,7 +60,7 @@ class JournalPageController extends Controller
         if ($issue_heading == "") {
             $volume = "Vol. " . ($issue_papers->first()?->journal_archive_volume?->vol_no ?? '');
             $issue = "Issue (" . ($issue_papers->first()?->journal_archive_issue?->issue_no ?? '') . ")";
-            $issue_heading=$volume." ".$issue;
+            $issue_heading = $volume . " " . $issue;
         }
 
         return view('journals.issue')->with([
@@ -111,5 +111,19 @@ class JournalPageController extends Controller
         return view('journals.imprint')->with([
             'imprint' => $imprint,
         ]);
+    }
+    public function information_for_reviewer()
+    {
+        return view('information-for-reviewer');
+    }
+
+    public function guide_for_author()
+    {
+        return view('guide-for-author');
+    }
+
+    public function policy()
+    {
+        return view('policy');
     }
 }

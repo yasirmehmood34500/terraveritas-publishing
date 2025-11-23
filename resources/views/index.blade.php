@@ -23,7 +23,7 @@
                         </div>
                     </div> --}}
 
-                    <small><a class="text-dark underline-hover"
+                    <small class="title-paper"><a class="text-dark underline-hover title-paper"
                             href="{{ route('journal.view_paper', ['abbr' => @$value?->journal?->abbreviation ?? 'AASB', 'id' => $value->id]) }}"><b>{{ $value->title }}</b></a></small><br>
                     @php
                         $authors = str_replace(' and ', ', ', $value->authors);

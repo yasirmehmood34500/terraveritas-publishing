@@ -11,7 +11,7 @@ class PageController extends Controller
     public function index()
     {
         return view('index')->with([
-            'recent_papers' => JournalIssuePaper::inRandomOrder()->limit(10)->get(),
+            'recent_papers' => JournalIssuePaper::with('journal')->inRandomOrder()->limit(10)->get(),
         ]);
     }
     public function journals()

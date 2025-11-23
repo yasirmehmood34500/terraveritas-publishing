@@ -8,10 +8,6 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-    public function __construct()
-    {
-        view()->share('journals', Journal::get());
-    }
     public function index()
     {
         return view('index')->with([

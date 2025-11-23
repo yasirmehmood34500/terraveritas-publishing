@@ -21,7 +21,8 @@
             </ul> --}}
 
             <div>
-                <span><i class="fa-solid fa-bars"></i> <a class="text-decoration-none text-dark" href="">Imprint
+                <span><i class="fa-solid fa-bars"></i> <a class="text-decoration-none text-dark"
+                        href="{{ route('journal.imprint', ['abbr' => request()->route('abbr')]) }}">Imprint
                         Information</a></span>
                 {{-- <span><i class="fa-solid fa-arrow-down"></i> <a class="text-decoration-none text-dark" href="">Journal
                         Flyer</a></span> --}}

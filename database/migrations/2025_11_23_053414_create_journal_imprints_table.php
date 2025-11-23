@@ -11,10 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        if (!Schema::hasTable('journal_editorial_boards')) {
-            Schema::create('journal_editorial_boards', function (Blueprint $table) {
+        if (!Schema::hasTable('journal_imprints')) {
+            Schema::create('journal_imprints', function (Blueprint $table) {
                 $table->id();
+                $table->integer('journal_id')->default(0);
+                $table->string('field', 200)->nullable();
+                $table->string('text', 300)->nullable();
                 $table->timestamps();
+                $table->softDeletes();
             });
         }
     }
@@ -24,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('journal_editorial_boards');
+        Schema::dropIfExists('journal_imprints');
     }
 };

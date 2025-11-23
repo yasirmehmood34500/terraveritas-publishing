@@ -3,8 +3,8 @@
     <div class="bg-white mt-3">
         <!-- Artilces -->
         <div class="m-2 p-2">
-            <h2 class="mb-3">Special Issues</h2>
-            <p class="mb-3">
+            <h2 class="mb-3">{{ @$issue_heading ?? 'Current Issue' }}</h2>
+            {{-- <p class="mb-3">
                 Accounting and Auditing publishes Special Issues to create collections of papers on specific topics, with
                 the aim of building a community of authors and readers to discuss the latest research and develop new ideas
                 and research directions. Special Issues are led by Guest Editors, who are experts on the topic and all
@@ -48,7 +48,7 @@
                     </select>
                 </div>
             </div>
-            <hr>
+            <hr> --}}
             <div class="mt-4">
                 @foreach ($issue_papers as $key => $value)
                     <div class="mt-3">

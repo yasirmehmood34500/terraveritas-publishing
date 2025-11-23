@@ -40,9 +40,9 @@
                         </div> --}}
                 </div>
                 <hr class="mt-2 mb-2">
-
-
-                {{-- <a class="text-decoration-none fw-medium text-dark mt-2" href="#">More Articles...</a> --}}
+                <a class="btn btn-info fw-medium text-dark mt-2"
+                    href="https://control.terraveritaspublishing.com/upload/{{ request()->route('abbr', 'NNNN') }}/issue/{{ $paper->file_name }}">Download
+                    PDF</a>
             </div>
         </div>
     </div>

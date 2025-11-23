@@ -46,7 +46,7 @@
         <ul class="list-unstyled">
             @foreach (@$journals ?? [] as $key => $value)
                 <li class="d-flex align-items-start mb-2">
-                    <img src="{{ asset('storage/uploads/journals/' . $value->cover_copy_img_name) }}" alt=""
+                    <img src="https://control.terraveritaspublishing.com/upload/{{ @$value?->abbreviation ?? 'NNNN' }}/img/{{ @$value->cover_copy_img_name }}" alt="newnew"
                         class="me-2 rounded flex-shrink-0" style="width: 50px; height: 50px; object-fit: cover;">
                     <a href="{{ route('journal.index', ['abbr' => $value->abbreviation]) }}"
                         class="text-dark underline-hover"

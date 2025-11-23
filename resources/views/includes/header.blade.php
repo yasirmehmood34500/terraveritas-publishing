@@ -35,13 +35,14 @@
                 <ul class="navbar-nav mb-2 mb-lg-0 text-center">
                     <li class="nav-item"><a class="nav-link active" href="{{ route('index') }}">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('journals') }}">Journals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('guide_for_author') }}">For Author</a>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('information_for_reviewer') }}">For
                             Reviewer</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('guide_for_author') }}">Guide for Author</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('policy') }}">Policy</a></li>
+
                     <li class="nav-item"><a class="nav-link" href="{{ route('editorial_support') }}">Editorial
                             Support</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('policy') }}">Policy</a></li>
                     {{-- <li class="nav-item"><a class="nav-link" href="#">Services</a></li> --}}
                     <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">About</a></li>
                 </ul>

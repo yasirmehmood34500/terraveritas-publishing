@@ -31,6 +31,12 @@
   text-align: center;
 }
 
-.header-logo{
+.header-logo {
   width: 35px;
+}
+
+.sticky-sidebar {
+  position: sticky;
+  top: 20px;
+  align-self: flex-start;
 }

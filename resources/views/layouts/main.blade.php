@@ -16,9 +16,9 @@
     <div class="container">
 
         @include('includes.header')
-        @if (request()->route()->getName() == 'index')
+        {{-- @if (request()->route()->getName() == 'index') --}}
             @include('includes.banner')
-        @endif
+        {{-- @endif --}}
         @include('includes.filter-bar')
 
 

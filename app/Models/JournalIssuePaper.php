@@ -18,4 +18,12 @@ class JournalIssuePaper extends Model
     {
         return $this->belongsTo(Journal::class);
     }
+    public function journal_archive_volume(): BelongsTo
+    {
+        return $this->belongsTo(JournalArchiveVolume::class);
+    }
+    public function journal_archive_issue(): BelongsTo
+    {
+        return $this->belongsTo(JournalArchiveIssue::class);
+    }
 }

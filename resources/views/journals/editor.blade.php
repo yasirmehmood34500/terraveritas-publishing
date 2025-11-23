@@ -21,7 +21,7 @@
                     <div class="d-flex align-items-start gap-3">
 
                         <!-- Profile Image -->
-                        <img src="{{ asset('storage/uploads/editorial/') }}/{{ $value->img_name }}" alt=""
+                        <img src="https://control.terraveritaspublishing.com/upload/{{ request()->route('abbr', 'NNNN') }}/editorial/{{ @$value->img_name }}" alt=""
                             class="rounded-circle img-fluid" style="width:100px; height:100px; object-fit:cover;">
 
                         <!-- Profile Info -->

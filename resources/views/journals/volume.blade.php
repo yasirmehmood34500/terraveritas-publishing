@@ -9,12 +9,13 @@
                     <div class="col-md-3">
                         <div class="issue-cover">
                             <div>
-                                <a href="issue.php">
-                                    <img src="{{ asset('storage/uploads/journals/' . @$value?->journal?->cover_copy_img_name ?? '') }}"
+                                <a
+                                    href="{{ route('journal.issue', ['abbr' => request()->route('abbr'), 'issue_id' => @$value?->id ?? 0]) }}">
+                                    <img src="https://control.terraveritaspublishing.com/upload/{{ request()->route('abbr', 'NNNN') }}/img/{{ @$value?->journal?->cover_copy_img_name ?? '' }}"
                                         style="margin: 0px; width: 100%;" alt="Issue Cover">
                                 </a>
                             </div>
-                            <a href="{{ route('journal.issue', ['abbr' => request()->route('abbr')]) }}"
+                            <a href="{{ route('journal.issue', ['abbr' => request()->route('abbr'), 'issue_id' => @$value?->id ?? 0]) }}"
                                 style="color: black; text-decoration:none: font-size:14px;">
                                 Iss. {{ $value->issue_no }}
                                 {{ @$value?->journal_archive_year?->yyear ?? '' }}

@@ -15,6 +15,7 @@
 <body>
     <div class="container">
         @include('includes.header')
+        @include('includes.banner')
         @include('includes.filter-bar')
 
 
@@ -29,6 +30,7 @@
             <!-- Center Content -->
 
             <div class="col-lg-9">
+                {{-- @include('includes.slider') --}}
                 @yield('content')
             </div>
 

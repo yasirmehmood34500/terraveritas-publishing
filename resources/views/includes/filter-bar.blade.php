@@ -7,19 +7,19 @@
 
         <select class="form-select me-3" style="max-width: 220px;">
             <option value="">Select Journal</option>
-            <option value="1">Journal 1</option>
-            <option value="2">Journal 2</option>
-            <option value="3">Journal 3</option>
+            @foreach ($journals as $key => $value)
+                <option value="{{ $value->id }}">{{ $value->name }}</option>
+            @endforeach
         </select>
 
         <select class="form-select me-3" style="max-width: 220px;">
-            <option value="">All Article Types</option>
+            {{-- <option value="">All Article Types</option> --}}
             <option value="1">Article</option>
-            <option value="2">Review</option>
+            {{-- <option value="2">Review</option> --}}
             <option value="3">Editorial</option>
         </select>
 
         <button type="button" class="btn btn-primary me-3">Search</button>
-        <a href="#">Advanced</a>
+        {{-- <a href="#">Advanced</a> --}}
     </div>
 </div>

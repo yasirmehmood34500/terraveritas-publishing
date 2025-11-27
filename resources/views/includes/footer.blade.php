@@ -13,7 +13,7 @@
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                     {{-- <h6 class="text-uppercase mb-4 font-weight-bold"> --}}
                     <a class="navbar-brand d-flex align-items-center text-decoration-none" href="{{ route('index') }}">
-                        <img src="{{ asset('assets/imgs/logo-3.jpg') }}" alt="Logo" class="header-logo me-2"
+                        <img src="{{ asset('assets/imgs/logo-new.jpg') }}" alt="Logo" class="header-logo me-2"
                             style="width: 170px; height: auto;">
 
                     </a>

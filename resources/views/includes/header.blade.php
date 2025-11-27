@@ -15,7 +15,7 @@
             <!-- Left side login/signup -->
             <div class="d-flex align-items-center order-lg-0">
                 <a class="navbar-brand d-flex align-items-center text-decoration-none" href="{{ route('index') }}">
-                    <img src="{{ asset('assets/imgs/logo-3.jpg') }}" alt="Logo" class="header-logo me-2"
+                    <img src="{{ asset('assets/imgs/logo-new.jpg') }}" alt="Logo" class="header-logo me-2"
                         style="width: 50px; height: auto;">
                     <span class="logo-text modern">
                         TerraVeritas Publishing

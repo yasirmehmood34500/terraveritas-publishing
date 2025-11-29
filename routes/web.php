@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Journal\JournalPageController;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\SearchController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -13,6 +14,10 @@ Route::controller(PageController::class)->group(function () {
     Route::get('policy', 'policy')->name('policy');
     Route::get('editorial-support', 'editorial_support')->name('editorial_support');
     Route::get('about', 'about')->name('about');
+});
+
+Route::controller(SearchController::class)->group(function () {
+    Route::get('search', 'search')->name('search');
 });
 
 Route::prefix('journal/{abbr}')->name('journal.')->controller(JournalPageController::class)->group(function () {

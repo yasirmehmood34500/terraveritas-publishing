@@ -18,4 +18,9 @@ class JournalEditorialBoard extends Model
     {
         return $this->belongsTo(JournalEditorialBoardType::class);
     }
+
+    public function journal()
+    {
+        return $this->belongsTo(Journal::class);
+    }
 }

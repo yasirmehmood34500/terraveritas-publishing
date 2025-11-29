@@ -1,10 +1,10 @@
 {{-- @push('style') --}}
-    <style>
-        .text-decoration {
-            text-decoration: none;
-            font-size: 14px;
-        }
-    </style>
+<style>
+    .text-decoration {
+        text-decoration: none;
+        font-size: 14px;
+    }
+</style>
 {{-- @endpush --}}
 <footer class="text-center text-lg-start text-white" style="background-color: #45526e">
     <div class="container p-4 pb-0">
@@ -54,7 +54,8 @@
                     <a href="{{ route('guide_for_author') }}" class="text-decoration text-white"> For Authors</a><br>
 
 
-                    <a href="{{ route('information_for_reviewer') }}" class="text-decoration text-white">For Reviewers</a><br>
+                    <a href="{{ route('information_for_reviewer') }}" class="text-decoration text-white">For
+                        Reviewers</a><br>
 
 
                     <a href="" class="text-decoration text-white">For Editors</a><br>

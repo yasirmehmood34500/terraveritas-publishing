@@ -84,8 +84,8 @@
             @if (request()->route('abbr'))
                 <!-- Right side logo -->
                 <div class="order-lg-2">
-                    <a href="#" class="btn btn-outline-primary btn-login">Login</a>
-                    <a href="#" class="btn btn-primary btn-signup">Signup</a>
+                    <a href="https://{{ request()->route('abbr') }}.terraveritaspublishing.com/login" class="btn btn-outline-primary btn-login">Login</a>
+                    {{-- <a href="#" class="btn btn-primary btn-signup">Signup</a> --}}
                 </div>
             @endif
         </div>

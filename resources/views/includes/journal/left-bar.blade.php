@@ -35,7 +35,7 @@
                             Reviewer's</a></li>
                     </li>
                     <li><a class="text-decoration-none text-dark"
-                            href="{{ route('journal.index', ['abbr' => request()->route('abbr')]) }}">Track Your
+                            href="https://{{ request()->route('abbr') }}.terraveritaspublishing.com/login">Track Your
                             Submission</a></li>
                 </ul>
             </div>

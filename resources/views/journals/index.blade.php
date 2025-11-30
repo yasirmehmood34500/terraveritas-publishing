@@ -27,8 +27,15 @@
                 {{-- <span><i class="fa-solid fa-arrow-down"></i> <a class="text-decoration-none text-dark" href="">Journal
                         Flyer</a></span> --}}
                 <span><i class="fa-solid fa-lock-open text-warning"></i> <a class="text-decoration-none text-warning"
-                        href="">Open Access</a></span>
-                <span><b>{{ $journal->issn_online }}</b></span>
+                        href="{{ route('journal.policy', ['abbr' => request()->route('abbr')]) }}#open-access">Open Access</a></span>
+                <span><b>
+                        @if (request()->route('abbr') == 'AASB')
+                            <a href="https://portal.issn.org/resource/ISSN/3078-8862" target="_blank"
+                                style="text-decoration:none; color: black;">{{ $journal->issn_online }}</a>
+                        @else
+                            {{ $journal->issn_online }}
+                        @endif
+                    </b></span>
             </div>
         </div>
     </div>

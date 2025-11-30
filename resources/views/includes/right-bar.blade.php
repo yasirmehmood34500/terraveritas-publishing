@@ -2,16 +2,12 @@
     <div>
         <h3>News</h3>
         <small>13 August 2025</small><br>
-        <small class="fw-medium p-0"><a class="text-dark underline-hover" href="">Meet Us at
-                the Swiss Chemical Society (SCS) Fall Meeting 2025, 4 September 2025, Zurich,
-                Switzerland</a></small>
+        <small class="fw-medium p-0"><a class="text-dark underline-hover" href="https://www.reddit.com/r/Agriculture/" target="_blank">Agricultural science and practice</a></small>
     </div>
     <hr class="mt-2 mb-2">
     <div>
         <small>13 August 2025</small><br>
-        <small class="fw-medium p-0"><a class="text-dark underline-hover" href="">Meet Us at
-                the Swiss Chemical Society (SCS) Fall Meeting 2025, 4 September 2025, Zurich,
-                Switzerland</a></small>
+        <small class="fw-medium p-0"><a class="text-dark underline-hover" href="https://www.world-food-forum.org/news/en" target="_blank">World Food Forum</a></small>
     </div>
     <hr class="mt-2 mb-2">
     {{-- <a class="text-decoration-none fw-medium text-dark mt-2" href="#">More News &

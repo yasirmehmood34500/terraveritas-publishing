@@ -8,6 +8,7 @@ use App\Models\JournalArchiveIssue;
 use App\Models\JournalArchiveVolume;
 use App\Models\JournalEditorialBoard;
 use App\Models\JournalImprint;
+use App\Models\JournalIndexing;
 use App\Models\JournalIssuePaper;
 use App\Models\JournalOverview;
 use Illuminate\Http\Request;
@@ -19,7 +20,9 @@ class JournalPageController extends Controller
         parent::__construct();
         $abbr = $request->route('abbr');
         $journal = Journal::where('abbreviation', $abbr)->firstOrFail();
+        $indexing = JournalIndexing::where('journal_id', $journal->id)->get();
         view()->share('journal', $journal);
+        view()->share('indexing', $indexing);
         view()->share('volumes', JournalArchiveVolume::with('journal_archive_year')->where('journal_id', $journal->id)->get());
     }
     public function index(Request $request, $abbr)

@@ -7,7 +7,7 @@
 
                 <li><a class="text-decoration-none text-dark" href="">Find a Journal</a>
                 </li>
-                <li><a class="text-decoration-none text-dark" href="">Journal Proposal </a>
+                <li><a class="text-decoration-none text-dark" href="{{ route('journal_proposal') }}">Journal Proposal </a>
                 </li>
             </ul>
         </div>

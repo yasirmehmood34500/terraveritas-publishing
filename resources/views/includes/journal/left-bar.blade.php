@@ -30,15 +30,27 @@
                             href="{{ route('journal.imprint', ['abbr' => request()->route('abbr')]) }}">Journal
                             Imprint</a>
                     </li>
-                    <li><a class="text-decoration-none text-dark"
+                    {{-- <li><a class="text-decoration-none text-dark"
                             href="{{ route('journal.information_for_reviewer', ['abbr' => request()->route('abbr')]) }}">Journal
-                            Reviewer's</a></li>
+                            Reviewer's</a></li> --}}
+                    <li><a class="text-decoration-none text-dark"
+                            href="{{ route('journal.guide_for_author', ['abbr' => request()->route('abbr')]) }}#revenue-sources">Revenue
+                            Source</a></li>
+                    <li><a class="text-decoration-none text-dark"
+                            href="{{ route('journal.guide_for_author', ['abbr' => request()->route('abbr')]) }}#article-printing-charges">Article
+                            Printing
+                            Charges</a></li>
+
                     </li>
                     <li><a class="text-decoration-none text-dark"
                             href="https://{{ request()->route('abbr') }}.terraveritaspublishing.com/login">Track Your
                             Submission</a></li>
                 </ul>
             </div>
+            <a class="text-decoration-none text-dark"
+                href="https://{{ request()->route('abbr') }}.terraveritaspublishing.com/login">
+                <img src="{{ asset('assets/imgs/submission-btn.png') }}" style="width:95%; height: 60px;"
+                    alt="Submission Paper"></a>
 
 
 
@@ -61,6 +73,25 @@
                 <button type="button" class="btn btn-secondary w-100">Go</button>
             </div> --}}
             <div class="mt-3">
+                <h5>Journals Metrics</h5>
+                <table class="table table-bordered">
+                    <tr>
+                        <td>Acceptance rate</td>
+                        <td>20-30%</td>
+                    </tr>
+                    <tr>
+                        <td>Submission to first decision</td>
+                        <td>7-10 days</td>
+                    </tr>
+                    <tr>
+                        <td>Submission to final decision:</td>
+                        <td>60-90 days</td>
+                    </tr>
+                    <tr>
+                        <td>Acceptance to publication</td>
+                        <td>8-15 days</td>
+                    </tr>
+                </table>
                 <h5>Journal Volumes</h5>
                 @foreach ($volumes as $key => $value)
                     <div class="mt-3"><a class="text-decoration-none text-dark"
@@ -74,6 +105,18 @@
             <div>
                 <img src="https://control.terraveritaspublishing.com/upload/{{ request()->route('abbr', 'NNNN') }}/img/{{ @$journal->cover_copy_img_name }}"
                     style="width: 90%; height: 250px;" alt="Cover Page">
+            </div>
+            <div class="mt-3">
+                <hr>
+                <h5>Indexing</h5>
+                @foreach ($indexing as $key => $value)
+                    <div class="mt-3"><a class="text-decoration-none text-dark" href="{{ $value->link }}"
+                            target="_blank"><img
+                                src="https://control.terraveritaspublishing.com/upload/{{ request()->route('abbr', 'NNNN') }}/indexing/{{ $value->img }}"
+                                alt="{{ $value->title }}" style="width: 95%;"></a>
+                    </div>
+                @endforeach
+
             </div>
 
         </div>

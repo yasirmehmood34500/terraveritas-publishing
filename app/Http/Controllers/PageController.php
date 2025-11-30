@@ -43,4 +43,9 @@ class PageController extends Controller
     {
         return view('about');
     }
+
+    public function journal_proposal()
+    {
+        return view('journal-proposal');
+    }
 }

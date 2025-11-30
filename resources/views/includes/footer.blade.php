@@ -34,7 +34,7 @@
                     <a href="" class="text-decoration text-white">Pay an Invoice</a><br>
 
 
-                    <a href="" class="text-decoration text-white">Open Access Policy</a><br>
+                    <a href="{{ route('policy') }}#open-access" class="text-decoration text-white">Open Access Policy</a><br>
 
 
                     <a href="" class="text-decoration text-white">Contact</a><br>

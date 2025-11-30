@@ -10,282 +10,246 @@
         <div class="m-2 p-2">
             <h2 id="submission-checklist">Submission Checklist</h2>
             <p>Please:</p>
-            <ul>
+            <ol>
                 <li>Read the Aims & Scope to gain an overview and assess if your manuscript is suitable for this journal.
                 </li>
                 <li>Use the Microsoft Word template to prepare your manuscript.</li>
                 <li>Make sure that issues about publication ethics, research ethics, copyright, authorship, figure formats,
                     data and references format have been appropriately considered.</li>
                 <li>Ensure that all authors have approved the content of the submitted manuscript.</li>
-            </ul>
+            </ol>
 
-            <h2 id="research-publication-ethics">Research and Publication Ethics</h2>
-            <h3>A) RESEARCH ETHICS</h3>
-            <h4>Research Involving Plants:</h4>
-            <p>Experimental research involving plants, whether they are cultivated or wild, must adhere to institutional,
-                national, or international guidelines. Authors are advised to adhere to the Convention on Biological
-                Diversity and the Convention on the Trade in Endangered Species of Wild Fauna and Flora.</p>
-            <p>Every submitted manuscript should include genetic information and specify the origin of the plant material.
-                For studies focusing on rare and non-model plants (excluding common model plants like Arabidopsis thaliana,
-                Nicotiana benthamiana, Oryza sativa, etc.), voucher specimens must be placed in an accessible herbarium or
-                museum. These vouchers may be requested by future researchers to confirm the identity of the materials used,
-                especially if there are taxonomic changes in the future. They should include collection site details (GPS
-                coordinates), collection date, and documentation of the part(s) utilized in the study, if applicable.</p>
-            <p><strong>Ethical Statement:</strong> Psidium guajava trees were used in this study. Pear-shaped fruit with
-                pink flesh (FrP) and Pear-shaped fruit with white flesh (FrW) cultivars selected from orchard (name of farm,
-                city, country) were kindly provided by Dr. XX (name of institute, city, country).</p>
+            <h2 id="journal-publishing-schedule">1. Journal Publishing Schedule</h2>
+            <p>The research journals published under TerraVeritas Publishing are English-language, peer-reviewed scholarly
+                journals issued either biannually or quarterly. Each journal follows a consistent publication cycle, with
+                issues released in the first month of each half-year or quarter, depending on its frequency. This schedule
+                ensures the timely dissemination of high-quality research to the global academic community.</p>
 
-            <h4>Research Involving Animals</h4>
-            <p>The well-being of animals involved in research must be upheld. When presenting findings from experiments
-                involving animals, authors are required to specify adherence to international, national, and/or
-                institutional protocols for animal care and use. Authors are expected to adhere to the widely accepted
-                principles known as the 3Rs and provide detailed information on housing, care, and pain management in their
-                manuscripts. Additional guidance can be found in documents such as the Code of Practice for the Housing and
-                Care of Animals Used in Scientific Procedures, American Association for Laboratory Animal Science or
-                European Animal Research Association.</p>
-            <p>Additionally, confirmation of approval from a research ethics committee within the conducting institution or
-                practice should be provided (if such a committee exists). Authors should furnish the name of the ethics
-                committee and the corresponding permit number.</p>
-            <p>For studies involving animals, the following statement should precede the References section:</p>
-            <p><strong>Ethical approval:</strong> "All relevant international, national, and/or institutional guidelines for
-                animal care and use were observed".</p>
-            <p>Where applicable (if a committee exists): "All procedures carried out in studies involving animals adhered to
-                the ethical standards of the conducting institution or practice. (Please include the name of the committee +
-                permit number)".</p>
+            <h2 id="manuscript-submission">2. Manuscript Submission</h2>
+            <h3>Types of Papers/Articles</h3>
+            <p><strong>Original Articles:</strong> Original articles must present scientific results that are essentially
+                new and should be structured according to the guidelines given below.</p>
+            <p><strong>Review Papers:</strong> Review papers should be comprehensive, fully referenced expositions of
+                subjects of general interest, including background information and detailed critical analyses of current
+                work in the field and its significance, often with figures and drawings. They should be designed to serve as
+                source materials.</p>
+            <p><strong>Perspectives Articles:</strong> Perspectives articles provide a brief perspective on recent
+                developments in relevant fields. Note that these should not be full reviews, which should instead be
+                submitted as Review Papers.</p>
+            <p><strong>Methods Papers:</strong> We welcome papers describing new or improved methods. Please note that
+                methods that are highly specialized and useful only for a relatively small group of researchers will not be
+                considered with priority. We aim for papers that are of broader interest. The paper can be presented in a
+                protocol-style or narrative method-style.</p>
+            <p><strong>Opinion Papers:</strong> This category allows researchers to present a new synthesis of the field,
+                future projections, or discussions and speculations that go beyond the level of a standard Review Paper.
+                These are opinionated narratives that help the research field forward.</p>
 
-            <h4>Research Involving Humans:</h4>
-            <p>When documenting research involving human participants, authors are obligated to disclose that the studies
-                have received approval from the relevant institutional and/or national research ethics committee and have
-                been conducted in accordance with the ethical principles outlined in the 1964 Declaration of Helsinki and
-                its subsequent revisions or similar ethical standards. If there is uncertainty regarding adherence to the
-                1964 Helsinki Declaration or equivalent standards, authors must elucidate the rationale behind their
-                approach and provide evidence that the independent ethics committee or institutional review board has
-                explicitly sanctioned any questionable aspects of the study.</p>
-            <p>In cases where a study has been exempted from requiring ethics approval, this exemption should be clearly
-                delineated in the manuscript, including the identity of the ethics committee granting the exemption and the
-                reasons for it. Regardless of the circumstance, authors are required to specify the name of the ethics
-                committee and the corresponding reference number when applicable.</p>
-            <p>The following statements should precede the References section of the manuscript:</p>
-            <p><strong>Ethical approval:</strong> "All procedures conducted in studies involving human participants were
-                conducted in accordance with the ethical standards set forth by the institutional and/or national research
-                committee (including the name of the committee + reference number) and in compliance with the 1964 Helsinki
-                Declaration and its subsequent revisions or similar ethical standards."</p>
-            <p><strong>Ethical approval for retrospective studies:</strong> Although retrospective studies utilize
-                pre-existing data or biological material (for which formal consent may be unnecessary or difficult to
-                obtain), ethical approval may still be mandated based on the laws and national ethical guidelines of the
-                respective country. Authors are advised to verify with their institution to ensure compliance with the
-                specific requirements of their country.</p>
-            <p>The editorial team will carefully review all ethical statements. Manuscripts that do not have a suitable
-                ethical statement will be sent back to the authors and will not be considered until an appropriate and clear
-                statement is added.</p>
+            <h3>Submission Process</h3>
+            <p>Manuscripts should be submitted online at <a href="#">Paper Submission System</a>. The submitting
+                author, who is generally the corresponding author, is responsible for the manuscript during the submission
+                and peer-review process. The submitting author must ensure that all eligible co-authors have been included
+                in the author list and that they have all read and approved the submitted version of the manuscript. To
+                submit your manuscript, register and login to the submission portal. Once you have registered, click here to
+                go to the submission form. Authors are encouraged to use Microsoft Word (font Times new Roman, size 12) to
+                prepare their manuscript.</p>
 
-            <h4>Sex and Gender in Research</h4>
-            <p>Authors must include sex and gender considerations where relevant and follow the SAGER guidelines. It is
-                important for authors to differentiate between the terms sex (biological attribute) and gender (influenced
-                by social and cultural contexts) accurately to prevent confusion. Clear indication of the relevant sex(es)
-                should be provided in article titles and/or abstracts. Authors should outline in the background whether sex
-                and/or gender differences might be anticipated, detail how these factors were addressed in the study design,
-                present disaggregated data by sex and/or gender when suitable and discuss corresponding findings. In cases
-                where a sex and/or gender analysis was not conducted, authors should explain the rationale in the discussion
-                section. The authors must review the complete guidelines prior to submission.</p>
+            <h3>Submission declaration and verification</h3>
+            <p>Submission of an article implies that the work described has not been published previously, that it is not
+                under consideration for publication elsewhere, that its publication is approved by all authors, and that, if
+                accepted, it will not be published elsewhere in the same form, in English or in any other language,
+                including electronically without the written consent of the copyright-holder. To verify originality,
+                articles will be checked by the originality detection service Turnitin or other.</p>
 
-            <h4>Borders and Territories</h4>
-            <p>Authors must consider borders and territories when describing their research or in author or editor
-                correspondence, and all territorial disputes should be respected. The editorial team will work to resolve
-                any dispute or complaint that is acceptable to all parties involved. Editors stay neutral regarding
-                jurisdictional claims in published maps and institutional affiliations.</p>
+            <h3>Reviewer Suggestions</h3>
+            <p>During the submission process, authors will suggest three potential reviewers with the appropriate expertise
+                and contact information (name, official e-mail, and affiliation) to review the manuscript. The editors will
+                not necessarily approach these referees. The proposed referees should neither be current collaborators of
+                the authors nor have published with any of the authors of the manuscript within the last five years.
+                Proposed reviewers should be from different institutions to the authors. Authors may suggest reviewers from
+                among the authors that they frequently cite in their papers.</p>
 
-            <h3>B) Publication Ethics</h3>
-            <p>The authors must follow the code of conduct and guidelines of the Committee on Publication Ethics (COPE) when
-                misconduct is suspected or alleged. The following issues are highlighted.</p>
-            <p><strong>Originality and plagiarism:</strong> The authors should ensure that their work is original, and if
-                the authors have used the work and/or words of others, then this must be appropriately cited or quoted.</p>
-            <p>Please note that we use the Turnitin to screen manuscripts for plagiarism/similarity risks. By submitting the
-                manuscript to the journal, the authors agree to any originality checks the manuscript may undergo during
-                peer-review and production and processes.</p>
-            <p><strong>Data access and retention:</strong> Authors may be asked to provide raw data in connection with a
-                paper for editorial review and should be prepared to provide public access to such data.</p>
-            <p><strong>Multiple, redundant, or concurrent publication:</strong> An author should not publish manuscripts
-                describing essentially the same research in more than one journal or primary publication.</p>
-            <p>Where author or peer reviewer misconduct is identified, a due process will be followed to investigate the
-                issue, giving those involved a right to appeal in a formal way. The publisher and editor(s) will deal with
-                the allegations of research misconduct according to COPE guidelines.</p>
+            <h2 id="editorial-procedure">3. Editorial Procedure and Peer-Review</h2>
+            <p>The Editor-in Chief and Managing Editor are responsible for ensuring that all manuscripts meet the academic
+                standards fit for publication and are published in a timely fashion. The editors oversee each article's
+                individual progress through the journal's submission system and are responsible for liaising with authors,
+                reviewers, and Editorial office.</p>
+            <img src="{{ asset('assets/imgs/editorial-procedure.png') }}" alt="Editorial Procedure" class="img-fluid">
 
-            <h4>Citations:</h4>
+            <h3>Initial Checks</h3>
+            <p>All submitted manuscripts received by the Editorial Office are checked by a professional in-house staff to
+                determine whether the manuscripts are properly prepared and follow the ethical policies of the journal.
+                Manuscripts that are not properly prepared are returned to the authors for revision and resubmission. The
+                manuscripts that do not fit the journal's scope or do not meet the standards of the journal or
+                scientifically insignificant are rejected before peer-review by the Managing Editor.</p>
+
+            <h3>Peer Review</h3>
+            <p>Once a manuscript passes the initial checks, it is assigned to at least two independent outside experts for
+                peer-review by a Subject Editor. Potential reviewers suggested by the authors may also be considered.
+                However, the reviewers should not have published with any of the authors during the past five years and
+                should not currently work or collaborate with any of the institutions of the authors of the submitted
+                manuscript. Peer review comments are confidential and are only disclosed with the corresponding author
+                keeping the anonymity of the reviewer. If a revision is invited, the corresponding author submits the
+                revised manuscript, and the final decision is taken by the relevant Subject Editor based on the information
+                gained through the peer-review process.</p>
+
+            <h3>Editors and Editorial Staff as Authors</h3>
+            <p>Editorial staff/editors shall remove themselves from the decision-making process of their own academic work
+                submitted to the journal. Submissions authored by editorial staff/editors will be assigned to at least two
+                independent outside reviewers by another subject editor who do not have a Conflict of Interest with the
+                author and similarly the decision shall be made by the same subject editor. In such cases, the review
+                process must be made as transparent and rigorous as possible. Every effort shall be made to minimize any
+                bias in the review process by having another subject editor handle the peer review procedure independently.
+                Further, it is suggested that the subject editor send the article out for review without any author names
+                and affiliations on it.</p>
+
+            <h3>Editorial Decision</h3>
+            <p>The Subject Editor will communicate the decision, which will be one of the following:</p>
             <ul>
-                <li>Authors should ensure that where material is taken from other sources (including their own published
-                    writing), the source is clearly cited and that where appropriate permission is obtained.</li>
-                <li>Authors should not engage in excessive self-citation of their own work.</li>
-                <li>Authors should not copy references from other publications if they have not read the cited work.</li>
-                <li>Authors should not preferentially cite their own or their friends’, peers’, or institution’s
-                    publications.</li>
-                <li>Authors should not cite advertisements or advertorial material.</li>
-                <li>In accordance with COPE guidelines, we expect that “original wording taken directly from publications by
-                    other researchers should appear in quotation marks with the appropriate citations”. This condition also
-                    applies to an author’s own work. COPE have produced a discussion document on citation manipulation with
-                    recommendations for best practice.</li>
+                <li><strong>Accept after Minor Revisions:</strong> The paper is in principle accepted after revision based
+                    on the reviewer's comments. Authors are given 7 days for minor revisions.</li>
+                <li><strong>Reconsider after Major Revisions:</strong> The acceptance of the manuscript would depend on the
+                    revisions. The author needs to provide a point-by-point response of the reviewer's comments. Usually,
+                    only one round of major revisions is allowed. Authors are asked to resubmit the revised paper within a
+                    suitable time frame, and the revised version is returned to the reviewer for further comments.</li>
+                <li><strong>Reject:</strong> The article has serious flaws, and/or makes no significant contribution. No
+                    offer of resubmission to the journal is provided.</li>
             </ul>
 
-            <h2 id="manuscript-preparation">2. Manuscript Preparation</h2>
+            <h3>Manuscript withdrawal</h3>
+            <p>It is possible that authors may wish to withdraw their manuscript after submission to the journal. Possible
+                reasons could include major technical error, or the desire to submit the results to a different journal. In
+                all such cases, manuscripts can of course be withdrawn at the author's discretion.</p>
+
+            <h3>Author Appeals</h3>
+            <p>Authors may appeal a rejection by sending an e-mail to the Editorial Office of the journal. The appeal must
+                provide detailed justification, including point-by-point responses to the reviewer's comments. The Managing
+                Editor of the journal will forward the manuscript and related information (including the identities of the
+                referees) to the Editor-in-Chief or Editorial Board member to give an advisory recommendation on the
+                manuscript and may recommend acceptance, further peer-review, or uphold the original rejection decision. A
+                reject decision at this stage is final and cannot be reversed.</p>
+
+            <h3>Production and Publication</h3>
+            <p>Once accepted, the manuscript will undergo professional copy-editing, English editing, proofreading by the
+                authors, final corrections, pagination, and publication on the journal website.</p>
+
+            <h2 id="manuscript-preparation">4. Manuscript Preparation</h2>
             <p>The responsibility for the preparation of a paper according to the layout and style of the journal lies with
                 the author(s). The research papers, not according to the format of the journal, will not be accepted. <a
                     href="#">Sample Paper</a></p>
+
             <h3>General Considerations:</h3>
-            <p>Research manuscripts should comprise:</p>
             <ul>
-                <li><strong>Front matter:</strong> Title, Author list, Affiliations, Abstract, Keywords, Short title</li>
-                <li><strong>Research manuscript sections:</strong> Introduction, Materials and Methods, Results, Discussion,
-                    Conclusions.</li>
-                <li><strong>Back matter:</strong> Acknowledgments, Author Contributions, Conflicts of Interest, References.
+                <li><strong>Research manuscripts</strong> should comprise:
+                    <ol>
+                        <li><strong>Front matter:</strong> Title, Author list, Affiliations, Abstract, Keywords, Short title
+                        </li>
+                        <li><strong>Research manuscript sections:</strong> Introduction, Materials and Methods, Results,
+                            Discussion, Conclusions.</li>
+                        <li><strong>Back matter:</strong> Acknowledgments, Author Contributions, Conflicts of Interest,
+                            References.</li>
+                    </ol>
                 </li>
-            </ul>
-            <p>Review manuscripts should comprise the front matter, literature review sections and the back matter. It is
-                not necessary to follow the remaining structure.</p>
-            <ul>
+                <li>Review manuscripts should comprise the front matter, literature review sections and the back matter. It
+                    is not necessary to follow the remaining structure.</li>
                 <li>Acronyms/Abbreviations/Initialisms should be defined the first time they appear in each of three
-                    sections: the abstract; the main text; the first figure or table. When defined for the first time, the
-                    acronym/abbreviation/initialism should be added in parentheses after the written-out form.</li>
+                    sections: the abstract; the main text; the first figure or table.</li>
                 <li>SI Units (International System of Units) should be used.</li>
                 <li>Accession numbers of RNA, DNA and protein sequences used in the manuscript should be provided in the
                     Materials and Methods section.</li>
                 <li><strong>Equations:</strong> If you are using Microsoft Word, please use either the Equation Editor or
-                    the MathType add-on. Equations should be editable by the editorial office and not appear in a picture
-                    format.</li>
+                    the MathType add-on. Equations should be editable and not appear in image format.</li>
             </ul>
 
             <h3>Front Matter:</h3>
             <p>These sections should appear in all manuscript types.</p>
             <ul>
                 <li><strong>Title:</strong> The title of manuscript should be concise, specific, and relevant. It should
-                    identify if the study reports trial data or is a systematic review. When species, gene or protein names
-                    are included, the abbreviated name rather than full name should be used.</li>
-                <li><strong>Author’s and Affiliations:</strong> Authors' full names must be provided. Author(s) complete
-                    address information including city, zip code, state/province, and country must be written. At least one
-                    author should be designated as the corresponding author, and their email address and other details
-                    included at the end of the affiliation section. After acceptance, updates to author names or
-                    affiliations may not be permitted.</li>
-                <li><strong>Abstract:</strong> The abstract should be a total of about 200 words maximum. The abstract
-                    should be a single paragraph and should follow the style of structured abstracts, but without headings:
-                    1) Background: Place the question addressed in a broad context and highlight the purpose of the study;
-                    2) Methods: Briefly describe the main methods or treatments applied. 3) Results: Summarize the article's
-                    main findings; and 4) Conclusion: Indicate the main conclusions or interpretations. The abstract should
-                    be an objective representation of the article: it must not contain results which are not presented and
-                    substantiated in the main text and should not exaggerate the main conclusions.</li>
-                <li><strong>Keywords:</strong> Five to eight pertinent keywords need to be added after the abstract. We
-                    recommend that the keywords are specific to the article, yet reasonably common within the subject
-                    discipline.</li>
+                    identify if the study reports trial data or is a systematic review.</li>
+                <li><strong>Author's and Affiliations:</strong> Authors' full names must be provided along with complete
+                    address including city, zip code, state/province, and country. At least one author should be designated
+                    as the corresponding author with email address.</li>
+                <li><strong>Abstract:</strong> The abstract should be about 200 words maximum, in a single paragraph,
+                    following the structured abstract style without headings: Background, Methods, Results, Conclusion.</li>
+                <li><strong>Keywords:</strong> Five to eight pertinent keywords need to be added after the abstract,
+                    specific to the article.</li>
             </ul>
 
             <h3>Research Manuscript Sections:</h3>
             <ul>
-                <li><strong>Introduction:</strong> The introduction should briefly place the study in a broad context and
-                    highlight why it is important. It should define the purpose of the work and its significance, including
-                    specific hypotheses being tested. The current state of the research field should be reviewed carefully,
-                    and key publications cited. Please highlight controversial and diverging hypotheses when necessary.
-                    Finally, briefly mention the main aim of the work. Keep the introduction comprehensible to scientists
-                    working outside the topic of the paper.</li>
-                <li><strong>Materials and Methods:</strong> They should be described with sufficient detail to allow others
-                    to replicate and build on published results. New methods and protocols should be described in detail
-                    while well-established methods can be briefly described and appropriately cited. Give the name and
-                    version of any equipment/software used.</li>
-                <li><strong>Results:</strong> Provide a concise and precise description of the experimental results, their
-                    interpretation as well as the experimental conclusions that can be drawn.</li>
-                <li><strong>Discussion:</strong> Authors should discuss the results and how they can be interpreted in
-                    perspective of previous studies and of the working hypotheses. The findings and their implications
-                    should be discussed in the broadest context possible, and limitations of the work highlighted. Future
-                    research directions may also be mentioned. This section may be combined with Results.</li>
-                <li><strong>Conclusions:</strong> This section is mandatory, with one or two paragraphs to end the main
-                    text.</li>
+                <li><strong>Introduction:</strong> Should briefly place the study in a broad context and highlight its
+                    significance and hypotheses.</li>
+                <li><strong>Materials and Methods:</strong> Describe with sufficient detail to allow replication; cite
+                    established methods and specify equipment/software.</li>
+                <li><strong>Results:</strong> Provide concise, precise description and interpretation of findings.</li>
+                <li><strong>Discussion:</strong> Interpret findings in context of existing literature, address limitations,
+                    and propose future research directions.</li>
+                <li><strong>Conclusions:</strong> Summarize the main conclusions in one or two paragraphs.</li>
             </ul>
 
             <h3>Back Matter:</h3>
             <ul>
-                <li><strong>Acknowledgments:</strong> In this section you can acknowledge any support given which is not
-                    covered by the author’s contribution or funding sections. This may include administrative and technical
-                    support, or donations in kind (e.g., materials used for experiments).</li>
-                <li><strong>Funding:</strong> All sources of funding for the study should be disclosed. Clearly indicate
-                    grants that you have received in support of your research work and if you received funds to cover
-                    publication costs. Note that some funders will not refund article printing charges (APC) if the funder
-                    and grant number are not clearly and correctly identified in the paper. Please add: “This research
-                    received no external funding” or “This research was funded by [name of funder] grant number [xxx]” and
-                    “The APC was funded by [xxx]” in this section.</li>
-                <li><strong>CRediT Author Statement:</strong> Each author is expected to have made substantial contributions
-                    to the conception or design of the work; or the acquisition, analysis, or interpretation of data; or the
-                    creation of new software used in the work; or have drafted the work or substantively revised it; AND has
-                    approved the submitted version (and version substantially edited by journal staff that involves the
-                    author’s contribution to the study); AND agrees to be personally accountable for the author’s own
-                    contributions and for ensuring that questions related to the accuracy or integrity of any part of the
-                    work, even ones in which the author was not personally involved, are appropriately investigated,
-                    resolved, and documented in the literature. Please turn to the CRediT taxonomy for the term explanation.
-                    For research articles with several authors, a short paragraph specifying their individual contributions
-                    must be provided.</li>
-                <li><strong>Conflict of Interest:</strong> Authors must identify and declare any personal circumstances or
-                    interest that may be perceived as influencing the representation or interpretation of reported research
-                    results. Any role of the funding sponsors in the choice of research project; design of the study; in the
-                    collection, analyses, or interpretation of data; in the writing of the manuscript; or in the decision to
-                    publish the results must be declared in this section. Any projects funded by industry must pay special
-                    attention to the full declaration of funder involvement. For more details, please see Conflict of
-                    Interest.</li>
+                <li><strong>Acknowledgments:</strong> Acknowledge support not covered by contributions or funding (e.g.,
+                    technical support).</li>
+                <li><strong>Funding:</strong> Disclose all funding sources. State "no external funding" or list funder and
+                    grant number.</li>
+                <li><strong>Author Contributions:</strong> Use CRediT taxonomy terms (e.g., Conceptualization, Methodology,
+                    Writing). Contributions should be clear and concise.</li>
+                <li><strong>Conflicts of Interest:</strong> Declare any potential conflicts or state "The authors declare no
+                    conflict of interest."</li>
             </ul>
 
             <h3>Sample Statements</h3>
             <ul>
-                <li><strong>Acknowledgement:</strong> The authors wish to acknowledge PCSIR Laboratories, Islamabad, for
-                    chemical analyses OR The authors thank Professor I.A. Khan for critical review and suggestions to
-                    improve this manuscript.</li>
-                <li><strong>CRediT author statement:</strong> M. Qasim conceived the idea, designed the study and supervised
-                    research project; W. Li co-supervised research study and performed data analysis; A.A. Ghorab assisted
-                    in layout of experiment and field data collection; A.G. Kumar contributed in the framing and executing
-                    the research idea and assisted in design layout; S.A. Naqvi assisted in data collection, laboratory work
-                    and proofreading; A.D. John reviewed and edited the manuscript. <br> M.A. Ahsen, S.A. Naqvi, M.J.
-                    Jaskani designed and ran experiments; M. Waseem, I.A. Khan, K. Hussnain drafted; K. Mehmood, M.M. Khan
-                    finalized the draft.</li>
-                <li><strong>Funding:</strong> The authors acknowledge Higher Education Commission, Pakistan for funding
-                    (Project No. NRPU-8781) OR This research was supported, in part, by Plant Research Laboratories,
-                    Pakistan for the micropropagation experiment.</li>
-                <li><strong>Conflict of interest:</strong> The authors declare no conflict of interest OR The sponsors had
-                    no role in the design, execution, interpretation, or publishing this study.</li>
+                <li><strong>Acknowledgement:</strong> The authors acknowledge Higher Education Commission for funding
+                    (NRPU-8781) and Dr. M.A. Khan for chemical analysis.</li>
+                <li><strong>CRediT author statement:</strong> M.A. Ahsen, S.A. Naqvi, M.J. Jaskani designed and ran
+                    experiments; M. Waseem, I.A. Khan, K. Hussnain drafted; K. Mehmood, M.M. Khan finalized the draft.</li>
+                <li><strong>Conflict of interest:</strong> The authors declare no conflict of interest.</li>
                 <li><strong>Ethical statement:</strong> This article does not contain any studies requiring ethics committee
                     approval.</li>
-                <li><strong>Availability of data and material:</strong> Data is available upon request to the corresponding
+                <li><strong>Availability of data and material:</strong> Available upon request from the corresponding
                     author.</li>
                 <li><strong>Consent to participate:</strong> All participants consented for this research study.</li>
                 <li><strong>Informed consent:</strong> Participants signed consent for publishing data and photographs.</li>
-                <li><strong>Consent for publication:</strong> All authors consented to publish this research in this
-                    journal.</li>
+                <li><strong>Consent for publication:</strong> All authors consented to publish this research in journal.
+                </li>
                 <li><strong>SDGs addressed:</strong> No poverty, Zero hunger, Good health and well-being, etc.</li>
-                <li><strong>Policy referred:</strong> Sustainable agriculture, Dairy sector, Food security, Rural
-                    development, Food and Nutrition, Economic growth, climate change, GHG emission etc.</li>
-                <li><strong>Publisher’s note:</strong> All claims are solely those of the authors and do not represent the
+                <li><strong>Policy referred:</strong> Agricultural, Food, Rural development, Sustainable agriculture, Food
+                    security, etc.</li>
+                <li><strong>Publisher's note:</strong> All claims are solely those of the authors and do not represent the
                     views of their institutions or the publisher.</li>
             </ul>
 
             <h2 id="citation-style">Citation and Reference Style</h2>
             <h3>In-text Citations:</h3>
-            <p>APA in-text citations consist of the author’s last name and publication year, e.g. (Jaskani, 2022). When
-                citing a specific part of a source, also include a page number or range, for example (Jaskani, 2022, p. 72)
-                or (John, 2019, pp. 5–14).</p>
-            <p>The in-text citation can be placed in parentheses or naturally integrated into a sentence.</p>
-            <ul>
-                <li><strong>Parenthetical:</strong> There is a correlation between fertilizer dose and growth of citrus
-                    trees (Jaskani, 2022) OR Triploid citrus trees produce seedless fruits (Jaskani & Khan, 2018; Naqvi et
-                    al., 2021).</li>
-                <li><strong>Narrative:</strong> Jaskani (2022) found a correlation between fertilizer dose and growth of
-                    citrus trees OR Jaskani and Khan (2018) reported that triploid citrus trees produce seedless fruits.
+            <ol>
+                <li>APA in-text citations consist of the author's last name and publication year, e.g. (Jaskani, 2022). When
+                    citing a specific part of a source, also include a page number or range, for example (Jaskani, 2022, p.
+                    72) or (John, 2019, pp. 5–14).</li>
+                <li>The in-text citation can be placed in parentheses or naturally integrated into a sentence.
+                    <ul>
+                        <li><strong>Parenthetical:</strong> There is a correlation between fertilizer dose and growth of
+                            citrus trees (Jaskani, 2022) OR Triploid citrus trees produce seedless fruits (Jaskani & Khan,
+                            2018; Naqvi et al., 2021).</li>
+                        <li><strong>Narrative:</strong> Jaskani (2022) found a correlation between fertilizer dose and
+                            growth of citrus trees OR Jaskani and Khan (2018) reported that triploid citrus trees produce
+                            seedless fruits.</li>
+                    </ul>
                 </li>
-            </ul>
-            <p>If a work has two authors, separate their names with an ampersand (&) in a parenthetical citation or “and” in
-                a narrative citation. If there are three or more authors, only include the first author’s last name followed
-                by “et al.”, meaning “and others”.</p>
-            <p>Group authors known by their abbreviations (e.g., FAO) are written in full the first time and are abbreviated
-                in subsequent citations.</p>
-            <p>If the author of a source is unknown, try to determine if there is an organization or government responsible
-                for creating the content. If so, include its name in the in-text citation (and reference entry). e.g.
-                (Tesla, 2020), FAO, 2024), (WHO, 2025).</p>
-            <p>If a statement is supported by multiple sources, the in-text citations can be combined in one parenthesis.
-                Order the sources alphabetically and separate them with a semicolon. Where citing multiple works from the
-                same author, list the years of publication separated by a comma. e.g. (Fred, 2010; Jude, 2005; Simon, 2012,
-                2018).</p>
+                <li>If a work has two authors, separate their names with an ampersand (&) in a parenthetical citation or
+                    “and” in a narrative citation. If there are three or more authors, only include the first author's last
+                    name followed by "et al.", meaning "and others".</li>
+                <li>Group authors known by their abbreviations (e.g., FAO) are written in full the first time and are
+                    abbreviated in subsequent citations.</li>
+                <li>If the author of a source is unknown, try to determine if there is an organization or government
+                    responsible for creating the content. If so, include its name in the in-text citation (and reference
+                    entry). e.g. (Tesla, 2020), FAO, 2024), (WHO, 2025).</li>
+                <li>If a statement is supported by multiple sources, the in-text citations can be combined in one
+                    parenthesis. Order the sources alphabetically and separate them with a semicolon. Where citing multiple
+                    works from the same author, list the years of publication separated by a comma. e.g. (Fred, 2010; Jude,
+                    2005; Simon, 2012, 2018).</li>
+            </ol>
+
             <p>The following table shows the basic in-text citation styles:</p>
             <table class="table table-bordered">
                 <thead>
@@ -358,16 +322,16 @@
                     </tr>
                     <tr>
                         <td>Websites and software</td>
-                        <td>Scribbr (www.scribbr.com)<br>SPSS (version 25)</td>
-                        <td></td>
+                        <td>Scribbr (www.scribbr.com)</td>
+                        <td>SPSS (version 25)</td>
                     </tr>
                 </tbody>
             </table>
 
             <h3>References</h3>
-            <p>Although the reference format differs depending on the type of source (e.g., a book, webpage, or video),
-                they’re built from the same four components i.e. author, date, title and source.</p>
-            <ul>
+            <ol>
+                <li>Although the reference format differs depending on the type of source (e.g., a book, webpage, or video),
+                    they’re built from the same four components i.e. author, date, title and source.</li>
                 <li>In an APA reference, the author’s name is inverted: start with the last name, followed by a comma and
                     the initials, separated by a period and space.</li>
                 <li>Treat infixes, such as “Van” or “De”, as part of the last name. Don’t include personal titles such as
@@ -404,15 +368,15 @@
                     letter after the year to distinguish between them. e.g. Raza, J. (2014a) or Raza, J. (2014b).</li>
                 <li>Works that can be accessed online usually have a URL or DOI (digital object identifier). A DOI is often
                     used for scientific publications and books, while URL is more common for other online publications. Use
-                    the following guidelines:
+                    the following guidelines:</li>
+                <li>If available, always add a DOI
                     <ul>
-                        <li>If available, always add a DOI</li>
                         <li>A DOI is preferred over a URL (because it never changes)</li>
                         <li>Include the protocol (http:// or https://) for both DOIs and URLs</li>
                         <li>Do not add a period after the DOI or URL</li>
                     </ul>
                 </li>
-            </ul>
+            </ol>
 
             <h4>Journal article</h4>
             <p>Shafqat, W., Jaskani, M. J., Maqbool, R., Chattha, W. S., Ali, Z., Naqvi, S. A., Haider, M. S., Khan, I. A.,
@@ -438,31 +402,37 @@
             <p>Popkin, G. (2020, August 12). Global warming could unlock carbon from tropical soil. The New York Times.
                 https://www.nytimes.com/2020/08/12/climate/tropical-soils-climate-change.html</p>
             <h4>Webpage (changing over time)</h4>
-            <p>Food and Agriculture Organization of the United Nations. (2025, June 10). Global information and early
-                warning system on food and agriculture (GIEWS). FAO. Retrieved October 7, 2025, from
-                https://www.fao.org/giews/en/</p>
-            <p>Pakistan Bureau of Statistics. (2025). Agriculture statistics of Pakistan. Government of Pakistan. Retrieved
-                October 7, 2025, from https://www.pbs.gov.pk/content/agriculture-statistics</p>
-            <p>United States Department of Agriculture. (2025, September). Crop progress report. USDA. Retrieved October 7,
-                2025, from https://www.nass.usda.gov/Publications/National_Crop_Progress/</p>
-            <p>World Bank. (2025). Agriculture and rural development data. World Bank. Retrieved October 7, 2025, from
-                https://data.worldbank.org/topic/agriculture-and-rural-development</p>
+            <ul>
+                <li>Food and Agriculture Organization of the United Nations. (2025, June 10). Global information and early
+                    warning system on food and agriculture (GIEWS). FAO. Retrieved October 7, 2025, from
+                    https://www.fao.org/giews/en/</li>
+                <li>Pakistan Bureau of Statistics. (2025). Agriculture statistics of Pakistan. Government of Pakistan.
+                    Retrieved October 7, 2025, from https://www.pbs.gov.pk/content/agriculture-statistics</li>
+                <li>United States Department of Agriculture. (2025, September). Crop progress report. USDA. Retrieved
+                    October 7, 2025, from https://www.nass.usda.gov/Publications/National_Crop_Progress/</li>
+                <li>World Bank. (2025). Agriculture and rural development data. World Bank. Retrieved October 7, 2025, from
+                    https://data.worldbank.org/topic/agriculture-and-rural-development</li>
+            </ul>
             <h4>YouTube video (platform)</h4>
-            <p>CIMMYT. (2025, March 10). Climate-smart wheat farming techniques in South Asia [Video]. YouTube.
-                https://www.youtube.com/watch?v=efgh9101</p>
-            <p>Food and Agriculture Organization of the United Nations. (2024, November 12). How digital innovation is
-                transforming agriculture [Video]. YouTube. https://www.youtube.com/watch?v=abcd1234</p>
-            <p>United States Department of Agriculture. (2023, August 3). Sustainable farming practices for the future
-                [Video]. YouTube. https://www.youtube.com/watch?v=wxyz5678</p>
-            <p>World Bank. (2024, September 22). Empowering smallholder farmers through digital tools [Video]. YouTube.
-                https://www.youtube.com/watch?v=hijk1122</p>
+            <ul>
+                <li>CIMMYT. (2025, March 10). Climate-smart wheat farming techniques in South Asia [Video]. YouTube.
+                    https://www.youtube.com/watch?v=efgh9101</li>
+                <li>Food and Agriculture Organization of the United Nations. (2024, November 12). How digital innovation is
+                    transforming agriculture [Video]. YouTube. https://www.youtube.com/watch?v=abcd1234</li>
+                <li>United States Department of Agriculture. (2023, August 3). Sustainable farming practices for the future
+                    [Video]. YouTube. https://www.youtube.com/watch?v=wxyz5678</li>
+                <li>World Bank. (2024, September 22). Empowering smallholder farmers through digital tools [Video]. YouTube.
+                    https://www.youtube.com/watch?v=hijk1122</li>
+            </ul>
             <h4>Blog post (website)</h4>
-            <p>Iqbal, S. (2023, August 18). 5 ways AI is reshaping modern agriculture. AgriTech Insights.
-                https://agritechinsights.com/ai-in-agriculture</p>
-            <p>Khan, M. A. (2024, December 2). Why regenerative agriculture matters for Pakistan’s future. AgriToday Blog.
-                https://agritoday.pk/regenerative-agriculture-pakistan</p>
-            <p>International Fund for Agricultural Development. (2024, May 12). Digital tools empowering farmers across Asia
-                [Blog post]. IFAD. https://www.ifad.org/en/blogs/digital-agriculture</p>
+            <ul>
+                <li>Iqbal, S. (2023, August 18). 5 ways Al is reshaping modern agriculture. AgriTech Insights.
+                    https://agritechinsights.com/ai-in-agriculture</li>
+                <li>Khan, M. A. (2024, December 2). Why regenerative agriculture matters for Pakistan's future. AgriToday
+                    Blog. https://agritoday.pk/regenerative-agriculture-pakistan</li>
+                <li>International Fund for Agricultural Development. (2024, May 12). Digital tools empowering farmers across
+                    Asia [Blog post]. IFAD. https://www.ifad.org/en/blogs/digital-agriculture</li>
+            </ul>
 
             <h3>Abbreviations in APA references</h3>
             <table class="table table-bordered">
@@ -527,67 +497,21 @@
                     smaller fonts may be used, but no less than 8 pt. in size. Authors should use the Table option of
                     Microsoft Word to create tables.</li>
             </ul>
-
-            <h2 id="manuscript-submission">3. Manuscript Submission</h2>
-            <h3>Types of Papers/Articles</h3>
-            <ul>
-                <li><strong>Original Articles:</strong> Original articles must present scientific results that are
-                    essentially new and should be structured according to the guidelines given below.</li>
-                <li><strong>Review Papers:</strong> Review papers should be comprehensive, fully referenced expositions of
-                    subjects of general interest, including background information and detailed critical analyses of current
-                    work in the field and its significance, often with figures and drawings. They should be designed to
-                    serve as source materials.</li>
-                <li><strong>Perspectives Articles:</strong> Perspectives articles provide a brief perspective on recent
-                    developments in relevant fields. Note that these should not be full reviews, which should instead be
-                    submitted as Review Papers.</li>
-                <li><strong>Methods Papers:</strong> We welcome papers describing new or improved methods. Please note that
-                    methods that are highly specialized and useful only for a relatively small group of researchers will not
-                    be considered with priority. We aim for papers that are of broader interest. The paper can be presented
-                    in a protocol-style or narrative method-style.</li>
-                <li><strong>Opinion Papers:</strong> This category allows researchers to present a new synthesis of the
-                    field, future projections, or discussions and speculations that go beyond the level of a standard Review
-                    Paper. These are opinionated narratives that help the research field forward.</li>
-            </ul>
-
-            <h3>Submission Process</h3>
-            <p>Manuscripts should be submitted online at <a href="#">Paper Submission System</a>. The submitting
-                author, who is generally the corresponding author, is responsible for the manuscript during the submission
-                and peer-review process. The submitting author must ensure that all eligible co-authors have been included
-                in the author list and that they have all read and approved the submitted version of the manuscript. To
-                submit your manuscript, register and login to the submission portal. Once you have registered, click here to
-                go to the submission form. Authors are encouraged to use Microsoft Word (font Times new Roman, size 12) to
-                prepare their manuscript.</p>
-
-            <h3>Submission declaration and verification</h3>
-            <p>Submission of an article implies that the work described has not been published previously, that it is not
-                under consideration for publication elsewhere, that its publication is approved by all authors, and that, if
-                accepted, it will not be published elsewhere in the same form, in English or in any other language,
-                including electronically without the written consent of the copyright-holder. To verify originality,
-                articles will be checked by the originality detection service Turnitin or other.</p>
-
-            <h3>Suggestions for reviewer</h3>
-            <p>During the submission process, authors will suggest three potential reviewers with the appropriate expertise
-                and contact information (name, official e-mail, and affiliation) to review the manuscript. The editors will
-                not necessarily approach these referees. The proposed referees should neither be current collaborators of
-                the authors nor have published with any of the authors of the manuscript within the last five years.
-                Proposed reviewers should be from different institutions to the authors. Authors may suggest reviewers from
-                among the authors that they frequently cite in their papers.</p>
-
-            <h2 id="revenue-sources">4. Revenue Sources</h2>
+            <h2 id="revenue-sources">Revenue Sources</h2>
             <p>This is a self-financed Open Access journal, not supported by any agency or government. Article printing
-                charges are the only source of income. These resources support operating expense, including copyediting,
-                typesetting, long-term archiving, and journal management.</p>
-
-            <h2 id="printing-charges">5. Article Printing Charges</h2>
+                charges are the only source of income. These resources support operating expense, including webpage hosting
+                and maintenance, DOI subscription, copyediting, typesetting, long-term archiving, and office management.</p>
+            <h2 id="article-printing-charges">Article Printing Charges</h2>
             <p>All articles are published in full Open Access. There are no processing charges for submitted articles. To
                 provide free access to readers, and to cover the costs of peer review, copyediting, typesetting, long-term
-                archiving, and journal management, an article printing charges (APC) of PKR 25,000 (national) and US$ 200
+                archiving, and journal management, an article printing charges of PKR 20,000 (national) and US$ 100
                 (international) applies to papers accepted after peer review. The Article Printing Charges (APC) are based
-                on reduced rates for authors of low- and middle-income countries.</p>
-            <p>We consider individual waiver requests for articles on a case-by-case basis, and they may be granted in cases
-                of lack of funds. To apply for a waiver, please request during the submission process. A decision on the
-                waiver will normally be made within three working days. Requests made during the review process or after
-                acceptance will not be considered.</p>
+                on reduced rates for authors of low- and middle-income countries. <br>
+                We consider individual waiver requests for articles on a case-by-case basis, and they may be granted in
+                cases of lack of funds. To apply for a waiver, please request during the submission process. A decision on
+                the waiver will normally be made within three working days. Requests made during the review process or after
+                acceptance will not be considered.
+            </p>
         </div>
     </div>
 @endsection

@@ -13,7 +13,7 @@
             <h2 class="mt-3 mb-3">Journal Proposal</h2>
             <p class="mb-3">TerraVeritas launches new journals, acquires established journals, and welcomes the transfer of
                 society
-                journals from other publishers. Submit your proposal here.</p>
+                journals from other publishers. Submit your proposal <a href="{{ route('journal_proposal') }}"> here.</a></p>
 
             <div class="container-fluid mb-5">
 
@@ -64,7 +64,6 @@
                     </div>
                 @endforeach
 
-                <p class="mt-5">* Proceedings series journal</p>
             </div>
 
         </div>

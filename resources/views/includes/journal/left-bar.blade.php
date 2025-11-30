@@ -17,11 +17,7 @@
                             for Authors</a></li>
                     {{-- <li><a class="text-decoration-none text-dark"
                             href="{{ route('journal.index', ['abbr' => request()->route('abbr')]) }}">Archive</a></li> --}}
-                    <li><a class="text-decoration-none text-dark"
-                            href="{{ route('journal.issue', ['abbr' => request()->route('abbr')]) }}">Current Issue</a>
-                    </li>
-                    <li><a class="text-decoration-none text-dark"
-                            href="{{ route('journal.issue', ['abbr' => request()->route('abbr')]) }}">In Press</a></li>
+
                     <li><a class="text-decoration-none text-dark"
                             href="{{ route('journal.policy', ['abbr' => request()->route('abbr')]) }}">Journal
                             Policy</a></li>
@@ -47,10 +43,13 @@
                             Submission</a></li>
                 </ul>
             </div>
-            <a class="text-decoration-none text-dark"
-                href="https://{{ request()->route('abbr') }}.terraveritaspublishing.com/login">
-                <img src="{{ asset('assets/imgs/submission-btn.png') }}" style="width:95%; height: 60px;"
-                    alt="Submission Paper"></a>
+
+            <div>
+                <a class="text-decoration-none text-dark"
+                    href="https://{{ request()->route('abbr') }}.terraveritaspublishing.com/login">
+                    <img src="{{ asset('assets/imgs/submission-btn.png') }}" style="width:95%; height: 60px;"
+                        alt="Submission Paper"></a>
+            </div>
 
 
 
@@ -72,6 +71,31 @@
 
                 <button type="button" class="btn btn-secondary w-100">Go</button>
             </div> --}}
+
+            <h5>Journal Archive</h5>
+            <div class="mt-3">
+                <ul>
+
+                    <li><a class="text-decoration-none text-dark"
+                            href="{{ route('journal.issue', ['abbr' => request()->route('abbr')]) }}">Forthcoming
+                            Issue</a>
+                    </li>
+                    <li><a class="text-decoration-none text-dark"
+                            href="{{ route('journal.issue', ['abbr' => request()->route('abbr')]) }}">Current Issue</a>
+                    </li>
+                </ul>
+                @foreach ($volumes as $key => $value)
+                    <div class="mt-3"><a class="text-decoration-none text-dark"
+                            href="{{ route('journal.volume', ['abbr' => request()->route('abbr'), 'id' => $value->id]) }}">Vol.
+                            {{ $value->vol_no }} ({{ @$value?->journal_archive_year?->yyear ?? '' }})</a>
+                    </div>
+                @endforeach
+
+            </div>
+            <div class="mt-3">
+                <img src="https://control.terraveritaspublishing.com/upload/{{ request()->route('abbr', 'NNNN') }}/img/{{ @$journal->cover_copy_img_name }}"
+                    style="width: 90%; height: 250px;" alt="Cover Page">
+            </div>
             <div class="mt-3">
                 <h5>Journals Metrics</h5>
                 <table class="table table-bordered">
@@ -92,19 +116,6 @@
                         <td>8-15 days</td>
                     </tr>
                 </table>
-                <h5>Journal Volumes</h5>
-                @foreach ($volumes as $key => $value)
-                    <div class="mt-3"><a class="text-decoration-none text-dark"
-                            href="{{ route('journal.volume', ['abbr' => request()->route('abbr'), 'id' => $value->id]) }}">Vol.
-                            {{ $value->vol_no }} ({{ @$value?->journal_archive_year?->yyear ?? '' }})</a>
-                    </div>
-                @endforeach
-
-            </div>
-            <hr>
-            <div>
-                <img src="https://control.terraveritaspublishing.com/upload/{{ request()->route('abbr', 'NNNN') }}/img/{{ @$journal->cover_copy_img_name }}"
-                    style="width: 90%; height: 250px;" alt="Cover Page">
             </div>
             <div class="mt-3">
                 <hr>

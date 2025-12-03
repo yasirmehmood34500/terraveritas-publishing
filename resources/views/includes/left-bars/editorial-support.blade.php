@@ -1,7 +1,7 @@
 <div class="sticky-sidebar">
 <div class="m-3 p-3 bg-white">
     <h5>Editorial Support</h5>
-    <ul class="list-group list-unstyled">
+    <ul>
         <li><a class="text-dark underline-hover" href="#for-authors">For Authors</a></li>
         <li><a class="text-dark underline-hover" href="#for-editors">For Editors</a></li>
         <li><a class="text-dark underline-hover" href="#for-societies">For Societies</a></li>

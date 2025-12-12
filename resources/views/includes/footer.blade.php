@@ -6,6 +6,7 @@
     }
 
     .footer-text {
+        margin-top: 20px;
         display: flex;
         flex-direction: column;
     }
@@ -19,7 +20,7 @@
                     {{-- <h6 class="text-uppercase mb-4 font-weight-bold"> --}}
                     <a class="navbar-brand d-flex align-items-center text-decoration-none" href="{{ route('index') }}">
                         <img src="{{ asset('assets/imgs/logo-new.jpg') }}" alt="Logo" class="header-logo me-2"
-                            style="width: 170px; height: auto;">
+                            style="width: 110px; height: auto;">
 
                     </a>
                     <div class="footer-text text-decoration">

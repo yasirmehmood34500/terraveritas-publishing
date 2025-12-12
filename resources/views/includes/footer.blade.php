@@ -4,6 +4,11 @@
         text-decoration: none;
         font-size: 14px;
     }
+
+    .footer-text {
+        display: flex;
+        flex-direction: column;
+    }
 </style>
 {{-- @endpush --}}
 <footer class="text-center text-lg-start text-white" style="background-color: #45526e">
@@ -17,6 +22,13 @@
                             style="width: 170px; height: auto;">
 
                     </a>
+                    <div class="footer-text text-decoration">
+                        <span>TerraVeritas Publishing</span>
+                        <span>H # 355 St # 10, Umar Block, Riaz ul Jannah</span>
+                        <span>Faisalabad, Pakistan</span>
+                        <span>E-mail: <a
+                                href="mailto:director@terraveritaspublishing.com" style="color: white;">director@terraveritaspublishing.com</a></span>
+                    </div>
                     {{-- </h6> --}}
                     {{-- <p>
                        TerraVeritas Publishing
@@ -34,7 +46,8 @@
                     <a href="" class="text-decoration text-white">Pay an Invoice</a><br>
 
 
-                    <a href="{{ route('policy') }}#open-access" class="text-decoration text-white">Open Access Policy</a><br>
+                    <a href="{{ route('policy') }}#open-access" class="text-decoration text-white">Open Access
+                        Policy</a><br>
 
 
                     <a href="" class="text-decoration text-white">Contact</a><br>

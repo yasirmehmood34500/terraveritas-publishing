@@ -14,6 +14,7 @@ Route::controller(PageController::class)->group(function () {
     Route::get('policy', 'policy')->name('policy');
     Route::get('editorial-support', 'editorial_support')->name('editorial_support');
     Route::get('about', 'about')->name('about');
+    Route::get('contact', 'contact')->name('contact');
     Route::get('journal-proposal', 'journal_proposal')->name('journal_proposal');
 });
 

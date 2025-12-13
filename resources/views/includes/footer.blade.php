@@ -24,9 +24,9 @@
 
                     </a>
                     <div class="footer-text text-decoration">
-                        <span>TerraVeritas Publishing</span>
+                        <span>TerraVeritas Publishing (Private) Limited</span>
                         <span>H # 355 St # 10, Umar Block, Riaz ul Jannah</span>
-                        <span>Faisalabad, Pakistan</span>
+                        <span>Faisalabad - 38000, Pakistan</span>
                         <span>E-mail: <a
                                 href="mailto:director@terraveritaspublishing.com" style="color: white;">director@terraveritaspublishing.com</a></span>
                     </div>

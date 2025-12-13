@@ -10,7 +10,7 @@
 
             <div class="row">
                 <div class="col-lg-6">
-                    <h4>Member</h4>
+                    <h4>Members</h4>
                 </div>
                 <div class="col-lg-6">
                     <input type="text" placeholder="search..." class="form-control">

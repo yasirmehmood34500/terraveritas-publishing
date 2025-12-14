@@ -16,13 +16,13 @@ class ContactUsReceiveMail extends Mailable
     /**
      * Create a new message instance.
      */
-    public $name, $email, $subject, $message;
-    public function __construct($name, $email, $subject, $message)
+    public $name, $email, $subject_message, $body;
+    public function __construct($name, $email, $subject_message, $body)
     {
         $this->name = $name;
         $this->email = $email;
-        $this->subject = $subject;
-        $this->message = $message;
+        $this->subject_message = $subject_message;
+        $this->body = $body;
     }
 
     /**
@@ -45,8 +45,8 @@ class ContactUsReceiveMail extends Mailable
             with: [
                 'name' => $this->name,
                 'email' => $this->email,
-                'subject' => $this->subject,
-                'message' => $this->message,
+                'subject_message' => $this->subject_message,
+                'body' => $this->body,
             ],
         );
     }

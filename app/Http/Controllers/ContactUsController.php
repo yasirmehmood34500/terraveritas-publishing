@@ -22,8 +22,9 @@ class ContactUsController extends Controller
         if (config('app.env') == 'production') {
             try {
                 Mail::to($request->input('email'))->send(new ContactUsMail(name: $name));
-                Mail::to(config('mail.admin_email'))->send(new ContactUsReceiveMail(name: $name, email: $request->input('email'), subject: $request->input('subject'), message: $request->input('message')));
+                Mail::to(config('mail.admin_email'))->send(new ContactUsReceiveMail(name: $name, email: $request->input('email'), subject_message: $request->input('subject'), body: $request->input('message')));
             } catch (\Throwable $th) {
+                info($th->getMessage());
             }
         }
         return back()->with('success', 'Your message has been sent successfully.');

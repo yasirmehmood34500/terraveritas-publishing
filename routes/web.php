@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\Journal\JournalPageController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\SearchController;
@@ -17,6 +18,7 @@ Route::controller(PageController::class)->group(function () {
     Route::get('contact', 'contact')->name('contact');
     Route::get('journal-proposal', 'journal_proposal')->name('journal_proposal');
 });
+Route::post('contact', [ContactUsController::class, 'send_email'])->name('contact_send');
 
 Route::controller(SearchController::class)->group(function () {
     Route::get('search', 'search')->name('search');

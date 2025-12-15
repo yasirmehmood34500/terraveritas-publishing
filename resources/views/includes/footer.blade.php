@@ -51,7 +51,7 @@
                         Policy</a><br>
 
 
-                    <a href="" class="text-decoration text-white">Contact</a><br>
+                    <a href="{{ route('contact') }}" class="text-decoration text-white">Contact</a><br>
 
 
                     <a href="" class="text-decoration text-white">Jobs</a><br>

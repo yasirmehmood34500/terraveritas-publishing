@@ -3,6 +3,7 @@
     <div class="mb-3 mt-3">
         <div class="bg-white p-2">
             <h3>{{ $journal->name }}</h3>
+            <h5>Aims and Scope</h5>
             @foreach ($journal_overviews as $key => $value)
                 {{-- <h4 class="mb-3">{{ $value->heading }}</h4> --}}
                 <div style="font-size: 14px; text-align: justify;" class="mb-3">{!! $value->detail !!}</div>
@@ -72,7 +73,7 @@
                                 $output = $bolded[0];
                             }
                         @endphp
-                        <small>by {!! $output !!}</small><br>
+                         <small style="color: #6c757d; font-weight: 100;">by <i>{!! $output !!}</i></small><br>
                         <small class="text-muted">{{ $value->do_no }}</small><br>
                         <small style="text-align: justify; display: block;">
                             <b>Abstract:</b>

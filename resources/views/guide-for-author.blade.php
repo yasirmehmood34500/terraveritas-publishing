@@ -535,7 +535,7 @@
             <p>This is a self-financed Open Access journal, not supported by any agency or government. Article printing
                 charges are the only source of income. These resources support operating expense, including copyediting,
                 typesetting, long-term archiving, and journal management.</p>
-            <h2 id="article-printing-charges">6. Article Printing Charges</h2>
+            <h2 id="article-printing-charges">6. Article Processing Charges</h2>
             <p>All articles are published in full Open Access. There are no processing charges for submitted articles. To
                 provide free access to readers, and to cover the costs of peer review, copyediting, typesetting, long-term
                 archiving, and journal management, an article printing charges (APC) of PKR 25,000 (national) and US$ 200

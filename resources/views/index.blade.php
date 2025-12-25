@@ -36,7 +36,7 @@
                             $output = $bolded[0];
                         }
                     @endphp
-                    <small>by {!! $output !!}</small><br>
+                    <small style="color: #6c757d; font-weight: 100;">by <i>{!! $output !!}</i></small><br>
                     <small class="text-muted">{{ $value->doi_no }}</small><br>
                     <small style="text-align: justify; display: block;">
                         <b>Abstract:</b>

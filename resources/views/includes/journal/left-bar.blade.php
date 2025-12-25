@@ -34,20 +34,26 @@
                             Source</a></li>
                     <li><a class="text-decoration-none text-dark"
                             href="{{ route('journal.guide_for_author', ['abbr' => request()->route('abbr')]) }}#article-printing-charges">Article
-                            Printing
+                            Processing
                             Charges</a></li>
 
                     </li>
                     <li><a class="text-decoration-none text-dark"
                             href="https://{{ request()->route('abbr') }}.terraveritaspublishing.com/login">Track Your
                             Submission</a></li>
+                              <li><a class="text-decoration-none text-dark"
+                            href="{{ route('journal.issue', ['abbr' => request()->route('abbr')]) }}">In Press</a>
+                    </li>
+                    <li><a class="text-decoration-none text-dark"
+                            href="{{ route('journal.issue', ['abbr' => request()->route('abbr')]) }}">Current Issue</a>
+                    </li>
                 </ul>
             </div>
 
             <div>
                 <a class="text-decoration-none text-dark"
                     href="https://{{ request()->route('abbr') }}.terraveritaspublishing.com/login">
-                    <img src="{{ asset('assets/imgs/submission-btn.png') }}" style="width:95%; height: 60px;"
+                    <img src="{{ asset('assets/imgs/submission-btn.png') }}" style="width:95%; height: 60px; margin-bottom: 20px;"
                         alt="Submission Paper"></a>
             </div>
 
@@ -74,16 +80,6 @@
 
             <h5>Journal Archive</h5>
             <div class="mt-3">
-                <ul>
-
-                    <li><a class="text-decoration-none text-dark"
-                            href="{{ route('journal.issue', ['abbr' => request()->route('abbr')]) }}">Forthcoming
-                            Issue</a>
-                    </li>
-                    <li><a class="text-decoration-none text-dark"
-                            href="{{ route('journal.issue', ['abbr' => request()->route('abbr')]) }}">Current Issue</a>
-                    </li>
-                </ul>
                 @foreach ($volumes as $key => $value)
                     <div class="mt-3"><a class="text-decoration-none text-dark"
                             href="{{ route('journal.volume', ['abbr' => request()->route('abbr'), 'id' => $value->id]) }}">Vol.

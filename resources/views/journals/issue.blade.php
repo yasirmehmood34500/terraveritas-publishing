@@ -76,7 +76,7 @@
                                 $output = $bolded[0];
                             }
                         @endphp
-                        <small>by {!! $output !!}</small><br>
+                        <small style="color: #6c757d; font-weight: 100;">by <i>{!! $output !!}</i></small><br>
                         <small class="text-muted">{{ $value->do_no }}</small><br>
                         <small style="text-align: justify; display: block;">
                             <b>Abstract:</b>
@@ -86,8 +86,7 @@
 
                             @if (strlen(strip_tags($value->abstract)) > 300)
                                 <span class="more-text d-none">{{ substr(strip_tags($value->abstract), 300) }}</span>
-                                <a href="javascript:void(0)"
-                                    class="read-more text-decoration-none fw-medium text-dark">[...]
+                                <a href="javascript:void(0)" class="read-more text-decoration-none fw-medium text-dark">[...]
                                     Read more</a>
                             @endif
                         </small><br>
@@ -98,8 +97,7 @@
                             <span class="me-2 menu-arrow text-dark">►</span> Show Figures
                         </a>
                         <div class="collapse mt-2" id="articleImage">
-                            <img src="https://dummyimage.com/540x400/cccccc/000000.png&text=540x400" alt=""
-                                srcset="">
+                            <img src="https://dummyimage.com/540x400/cccccc/000000.png&text=540x400" alt="" srcset="">
                         </div> --}}
                     </div>
                     <hr class="mt-2 mb-2">
@@ -111,8 +109,8 @@
 @endsection
 @push('script')
     <script>
-        $(document).ready(function() {
-            $('.read-more').on('click', function() {
+        $(document).ready(function () {
+            $('.read-more').on('click', function () {
                 const moreText = $(this).prev('.more-text');
                 const isHidden = moreText.hasClass('d-none');
 

@@ -65,4 +65,14 @@ class PageController extends Controller
     {
         return view('contact');
     }
+
+    public function editors()
+    {
+        return view('editors');
+    }
+
+    public function pay_an_invoice()
+    {
+        return view('pay-an-invoice');
+    }
 }

@@ -46,7 +46,7 @@
                      <a href="{{ route('guide_for_author') }}#article-printing-charges" class="text-decoration text-white"> Article Processing Charges</a><br>
 
 
-                    <a href="" class="text-decoration text-white">Pay an Invoice</a><br>
+                    <a href="{{ route('pay_an_invoice') }}" class="text-decoration text-white">Pay an Invoice</a><br>
 
 
                     <a href="{{ route('policy') }}#open-access" class="text-decoration text-white">Open Access
@@ -74,7 +74,7 @@
                         Reviewers</a><br>
 
 
-                    <a href="" class="text-decoration text-white">Editors</a><br>
+                    <a href="{{ route('editors') }}" class="text-decoration text-white">Editors</a><br>
 
 
                     <a href="{{ route('librarians') }}" class="text-decoration text-white">Librarians</a><br>

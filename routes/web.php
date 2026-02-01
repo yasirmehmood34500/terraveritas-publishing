@@ -20,6 +20,8 @@ Route::controller(PageController::class)->group(function () {
     Route::get('about', 'about')->name('about');
     Route::get('contact', 'contact')->name('contact');
     Route::get('journal-proposal', 'journal_proposal')->name('journal_proposal');
+    Route::get('editors', 'editors')->name('editors');
+    Route::get('pay-an-invoice', 'pay_an_invoice')->name('pay_an_invoice');
 });
 Route::post('contact', [ContactUsController::class, 'send_email'])->name('contact_send');
 

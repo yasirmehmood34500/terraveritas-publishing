@@ -29,6 +29,18 @@ class PageController extends Controller
     {
         return view('guide-for-author');
     }
+    public function job()
+    {
+        return view('job');
+    }
+    public function librarians()
+    {
+        return view('librarians');
+    }
+    public function societies()
+    {
+        return view('societies');
+    }
 
     public function policy()
     {

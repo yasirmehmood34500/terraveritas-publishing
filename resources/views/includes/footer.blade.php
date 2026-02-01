@@ -56,7 +56,7 @@
                     <a href="{{ route('contact') }}" class="text-decoration text-white">Contact</a><br>
 
 
-                    <a href="" class="text-decoration text-white">Jobs</a><br>
+                    <a href="{{ route('job') }}" class="text-decoration text-white">Jobs</a><br>
 
                 </div>
 
@@ -77,12 +77,12 @@
                     <a href="" class="text-decoration text-white">Editors</a><br>
 
 
-                    <a href="" class="text-decoration text-white">Librarians</a><br>
+                    <a href="{{ route('librarians') }}" class="text-decoration text-white">Librarians</a><br>
 
 
 
 
-                    <a href="" class="text-decoration text-white">Societies</a><br>
+                    <a href="{{ route('societies') }}" class="text-decoration text-white">Societies</a><br>
 
 
 

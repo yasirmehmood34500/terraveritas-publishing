@@ -61,7 +61,7 @@
                         </div> --}}
 
                         <small class="title-paper"><a class="text-decoration-none text-dark title-paper"
-                                href="{{ route('journal.view_paper', ['abbr' => request()->route('abbr'), 'id' => $value->id]) }}"><b>{{ $value->title }}</b></a></small><br>
+                                href="{{ route('journal.view_paper', ['abbr' => request()->route('abbr'), 'id' => $value->id]) }}"><b>{{ $value->title }}</b></a><img src="{{ asset('assets/imgs/oa.png') }}" alt="" class="oa-icon"></small><br>
                         @php
                             $authors = str_replace(' and ', ', ', $value->authors);
                             $authorList = array_map('trim', explode(',', $authors));

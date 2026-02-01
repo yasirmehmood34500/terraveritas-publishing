@@ -43,7 +43,7 @@
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h6 class="text-uppercase mb-4 font-weight-bold">Information</h6>
 
-                    <a href="" class="text-decoration text-white">Article Processing Charges</a><br>
+                     <a href="{{ route('guide_for_author') }}#article-printing-charges" class="text-decoration text-white"> Article Processing Charges</a><br>
 
 
                     <a href="" class="text-decoration text-white">Pay an Invoice</a><br>
@@ -80,13 +80,11 @@
                     <a href="" class="text-decoration text-white">Librarians</a><br>
 
 
-                    <a href="" class="text-decoration text-white">Publishers</a><br>
 
 
                     <a href="" class="text-decoration text-white">Societies</a><br>
 
 
-                    <a href="" class="text-decoration text-white">Conference Organizers</a><br>
 
                 </div>
 

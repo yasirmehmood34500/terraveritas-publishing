@@ -6,6 +6,23 @@
     @endif
 @endsection
 @section('content')
+    <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        p,
+        ul li,
+        td,
+        label {
+            font-size: 12px !important;
+        }
+
+        p,
+        ul li {
+            text-align: justify;
+        }
+    </style>
     <div class="bg-white mt-3">
         <div class="m-2 p-2">
             <h2 id="research-ethics">1. Research Ethics Policy</h2>
@@ -270,7 +287,7 @@
                 this journal retain the copyright of their articles and are free to reproduce and disseminate their work.
             </p>
 
-            <h2 id="open-access">Open Access / Copyright <img
+            <h2 id="open-access">13. Open Access / Copyright <img
                     src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by.png"
                     style="height: 31px; width: 88px;" alt="open access"></h2>
             <p>Articles published in Research Journals of TerraVeritas Publishing are Open-Access distributed under the
@@ -281,7 +298,7 @@
                 journal.
             </p>
 
-            <h2 id="author-name-change">13. Author Name Change Policy</h2>
+            <h2 id="author-name-change">14. Author Name Change Policy</h2>
             <p>Changes in authorship, including the addition of authors, the removal of authors, or the reordering of
                 authors, must comply with our authorship criteria. In case of any change of authorship, the corresponding
                 author has the responsibility of obtaining the consent of all authors.</p>

@@ -3,9 +3,19 @@
   display: inline-block;
 }
 
-.oa-icon{
+.oa-icon {
   margin-left: 5px;
-  height: 15px;
+  height: 12px;
+}
+
+.os-header {
+  color: gray;
+  font-size: 14px;
+}
+
+.text-muted a {
+  color: gray;
+  text-decoration: none;
 }
 
 /* When collapsed (default) -> arrow points right */

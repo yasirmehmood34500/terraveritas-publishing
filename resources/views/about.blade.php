@@ -3,6 +3,23 @@
     @include('includes.left-bars.about')
 @endsection
 @section('content')
+    <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        p,
+        ul li,
+        td,
+        label {
+            font-size: 12px !important;
+        }
+
+        p,
+        ul li {
+            text-align: justify;
+        }
+    </style>
     <div class="bg-white mt-3">
         <!-- Artilces -->
         <div class="m-2 p-2">

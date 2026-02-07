@@ -6,14 +6,14 @@
     <style>
         .pdf-like-content h2 {
             font-family: 'Helvetica', sans-serif;
-            font-size: 1.5rem;
+            font-size: 24px;
             color: #333;
             font-weight: bold;
         }
 
         .pdf-like-content h3 {
             font-family: 'Helvetica', sans-serif;
-            font-size: 1.25rem;
+            font-size: 20px;
             color: #444;
             font-weight: bold;
         }
@@ -21,7 +21,7 @@
         .pdf-like-content p,
         .pdf-like-content li {
             font-family: 'Times New Roman', serif;
-            font-size: 1rem;
+            font-size: 16px;
             color: #555;
         }
 
@@ -32,6 +32,12 @@
 
         .table-bg {
             background-color: rgb(0 183 255 / 15%) !important;
+        }
+         p, ul li{
+            text-align: justify;
+        }
+        h1, h2, h3, h4, p, ul li{
+            font-size: 12px !important;
         }
     </style>
     <div class="bg-white mt-3 pdf-like-content">

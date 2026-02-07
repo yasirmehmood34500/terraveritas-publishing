@@ -22,9 +22,10 @@
                                     class="fa-solid fa-paperclip"></i></span>
                         </div>
                     </div> --}}
-
+                    <span class="os-header">Article</span> <img src="{{ asset('assets/imgs/oa.png') }}" class="oa-icon"
+                        alt=""><br>
                     <small class="title-paper"><a class="text-dark underline-hover title-paper"
-                            href="{{ route('journal.view_paper', ['abbr' => @$value?->journal?->abbreviation ?? 'AASB', 'id' => $value->id]) }}"><b>{{ $value->title }}</b></a><img src="{{ asset('assets/imgs/oa.png') }}" class="oa-icon" alt=""></small><br>
+                            href="{{ route('journal.view_paper', ['abbr' => @$value?->journal?->abbreviation ?? 'AASB', 'id' => $value->id]) }}"><b>{{ $value->title }}</b></a></small><br>
                     @php
                         $authors = str_replace(' and ', ', ', $value->authors);
                         $authorList = array_map('trim', explode(',', $authors));
@@ -37,7 +38,8 @@
                         }
                     @endphp
                     <small style="color: #6c757d; font-weight: 100;">by <i>{!! $output !!}</i></small><br>
-                    <small class="text-muted">{{ $value->doi_no }}</small><br>
+                    <small class="text-muted"><a href="{{ $value->doi_no }}"
+                            target="_blank">{{ $value->doi_no }}</a></small><br>
                     <small style="text-align: justify; display: block;">
                         <b>Abstract:</b>
                         <span class="abstract-text">
@@ -51,17 +53,16 @@
                         @endif
                     </small><br>
 
-                    {{-- <small>(This article belongs to the Section<a class="text-decoration-none fw-medium text-dark"
-                                href=""> Vaccine Design,
-                                Development, and Delivery</a>)</small> --}}
+                    {{-- <small>(This article belongs to the Section<a class="text-decoration-none fw-medium text-dark" href="">
+                            Vaccine Design,
+                            Development, and Delivery</a>)</small> --}}
                     {{-- <a class="d-block text-decoration-none menu-btn collapsed text-dark mt-2" data-bs-toggle="collapse"
-                            href="#articleImage" role="button" aria-expanded="false" aria-controls="articleImage">
-                            <span class="me-2 menu-arrow text-dark">►</span> Show Figures
-                        </a>
-                        <div class="collapse mt-2" id="articleImage">
-                            <img src="https://dummyimage.com/540x400/cccccc/000000.png&text=540x400" alt=""
-                                srcset="">
-                        </div> --}}
+                        href="#articleImage" role="button" aria-expanded="false" aria-controls="articleImage">
+                        <span class="me-2 menu-arrow text-dark">►</span> Show Figures
+                    </a>
+                    <div class="collapse mt-2" id="articleImage">
+                        <img src="https://dummyimage.com/540x400/cccccc/000000.png&text=540x400" alt="" srcset="">
+                    </div> --}}
                 </div>
                 <hr class="mt-2 mb-2">
             @endforeach
@@ -71,8 +72,8 @@
 @endsection
 @push('script')
     <script>
-        $(document).ready(function() {
-            $('.read-more').on('click', function() {
+        $(document).ready(function () {
+            $('.read-more').on('click', function () {
                 const moreText = $(this).prev('.more-text');
                 const isHidden = moreText.hasClass('d-none');
 

@@ -1,13 +1,13 @@
 <div class="m-3 p-3 bg-white">
     <div>
-        <h3>News</h3>
-        <small>13 August 2025</small><br>
-        <small class="fw-medium p-0"><a class="text-dark underline-hover" href="https://www.reddit.com/r/Agriculture/" target="_blank">Agricultural science and practice</a></small>
+        <h3>Links</h3>
+        <small class="fw-medium p-0"><a class="text-dark underline-hover" href="https://www.reddit.com/r/Agriculture/"
+                target="_blank">Agricultural science and practice</a></small>
     </div>
     <hr class="mt-2 mb-2">
     <div>
-        <small>13 August 2025</small><br>
-        <small class="fw-medium p-0"><a class="text-dark underline-hover" href="https://www.world-food-forum.org/news/en" target="_blank">World Food Forum</a></small>
+        <small class="fw-medium p-0"><a class="text-dark underline-hover"
+                href="https://www.world-food-forum.org/news/en" target="_blank">World Food Forum</a></small>
     </div>
     <hr class="mt-2 mb-2">
     {{-- <a class="text-decoration-none fw-medium text-dark mt-2" href="#">More News &
@@ -101,7 +101,8 @@
         <small class="text-muted">Topic Editors: Qinglai Dang, Ilona Mészáros, Lei Wang</small><br>
         <small class="text-danger">Deadline: 30 August 2025</small>
     </div> --}}
-    {{-- <hr class="mt-2 mb-2"> --}}
+    {{--
+    <hr class="mt-2 mb-2"> --}}
     {{-- <a class="text-decoration-none fw-medium text-dark mt-2" href="#">More Topics...</a> --}}
 </div>
 

@@ -3,6 +3,37 @@
     @include('includes.left-bars.editorial-support')
 @endsection
 @section('content')
+    <style>
+        h2 {
+            font-family: 'Helvetica', sans-serif;
+            font-size: 24px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-family: 'Helvetica', sans-serif;
+            font-size: 20px;
+            color: #444;
+            font-weight: bold;
+        }
+
+        h4 {
+            font-family: 'Helvetica', sans-serif;
+            font-size: 18px;
+            color: #444;
+            font-weight: bold;
+            margin-top: 1.5rem;
+        }
+
+        p,
+        ul li {
+            text-align: justify;
+        }
+        h1, h2, h3, h4, p, ul li{
+            font-size: 12px !important;
+        }
+    </style>
     <div class="bg-white mt-3">
         <!-- Artilces -->
         <div class="m-2 p-2">

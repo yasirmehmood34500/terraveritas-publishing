@@ -1,4 +1,18 @@
 @extends('layouts.main')
+@push('style')
+    <style>
+        h2 {
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+        p, ul li{
+            text-align: justify;
+        }
+    </style>
+@endpush
 @section('left-bar')
     @include('includes.left-bars.information-for-reviewer')
     @if (request()->route('abbr'))
@@ -50,7 +64,8 @@
                 <li><strong>Transparent Peer review:</strong> Review report is posted with the published article. Reviewers
                     can choose if they want to share their identity.</li>
                 <li><strong>Collaborative:</strong> Two or more reviewers work together to submit a unified report. <br> OR
-                    <br> The author revises manuscripts under the supervision of one or more reviewers.</li>
+                    <br> The author revises manuscripts under the supervision of one or more reviewers.
+                </li>
                 <li><strong>Post publication:</strong> Review solicited or unsolicited, of a published paper. Does not
                     exclude other forms of peer review.</li>
             </ul>

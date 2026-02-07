@@ -28,7 +28,8 @@
                 {{-- <span><i class="fa-solid fa-arrow-down"></i> <a class="text-decoration-none text-dark" href="">Journal
                         Flyer</a></span> --}}
                 <span><i class="fa-solid fa-lock-open text-warning"></i> <a class="text-decoration-none text-warning"
-                        href="{{ route('journal.policy', ['abbr' => request()->route('abbr')]) }}#open-access">Open Access</a></span>
+                        href="{{ route('journal.policy', ['abbr' => request()->route('abbr')]) }}#open-access">Open
+                        Access</a></span>
                 <span><b>
                         @if (request()->route('abbr') == 'AASB')
                             <a href="https://portal.issn.org/resource/ISSN/3078-8862" target="_blank"
@@ -59,9 +60,10 @@
                                         class="fa-solid fa-paperclip"></i></span>
                             </div>
                         </div> --}}
-
+                        <span class="os-header">Article</span> <img src="{{ asset('assets/imgs/oa.png') }}" class="oa-icon"
+                            alt=""><br>
                         <small class="title-paper"><a class="text-decoration-none text-dark title-paper"
-                                href="{{ route('journal.view_paper', ['abbr' => request()->route('abbr'), 'id' => $value->id]) }}"><b>{{ $value->title }}</b></a><img src="{{ asset('assets/imgs/oa.png') }}" alt="" class="oa-icon"></small><br>
+                                href="{{ route('journal.view_paper', ['abbr' => request()->route('abbr'), 'id' => $value->id]) }}"><b>{{ $value->title }}</b></a></small><br>
                         @php
                             $authors = str_replace(' and ', ', ', $value->authors);
                             $authorList = array_map('trim', explode(',', $authors));
@@ -73,7 +75,7 @@
                                 $output = $bolded[0];
                             }
                         @endphp
-                         <small style="color: #6c757d; font-weight: 100;">by <i>{!! $output !!}</i></small><br>
+                        <small style="color: #6c757d; font-weight: 100;">by <i>{!! $output !!}</i></small><br>
                         <small class="text-muted">{{ $value->do_no }}</small><br>
                         <small style="text-align: justify; display: block;">
                             <b>Abstract:</b>
@@ -83,8 +85,7 @@
 
                             @if (strlen(strip_tags($value->abstract)) > 300)
                                 <span class="more-text d-none">{{ substr(strip_tags($value->abstract), 300) }}</span>
-                                <a href="javascript:void(0)"
-                                    class="read-more text-decoration-none fw-medium text-dark">[...]
+                                <a href="javascript:void(0)" class="read-more text-decoration-none fw-medium text-dark">[...]
                                     Read more</a>
                             @endif
                         </small><br>
@@ -95,8 +96,7 @@
                             <span class="me-2 menu-arrow text-dark">►</span> Show Figures
                         </a>
                         <div class="collapse mt-2" id="articleImage">
-                            <img src="https://dummyimage.com/540x400/cccccc/000000.png&text=540x400" alt=""
-                                srcset="">
+                            <img src="https://dummyimage.com/540x400/cccccc/000000.png&text=540x400" alt="" srcset="">
                         </div> --}}
                     </div>
                     <hr class="mt-2 mb-2">
@@ -110,8 +110,8 @@
 @endsection
 @push('script')
     <script>
-        $(document).ready(function() {
-            $('.read-more').on('click', function() {
+        $(document).ready(function () {
+            $('.read-more').on('click', function () {
                 const moreText = $(this).prev('.more-text');
                 const isHidden = moreText.hasClass('d-none');
 

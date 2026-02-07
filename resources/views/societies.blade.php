@@ -36,7 +36,7 @@
          p, ul li{
             text-align: justify;
         }
-        h1, h2, h3, h4, p, ul li{
+       .pdf-like-content h1, .pdf-like-content h2, .pdf-like-content h3, .pdf-like-content h4, .pdf-like-content p, .pdf-like-content ul li{
             font-size: 12px !important;
         }
     </style>

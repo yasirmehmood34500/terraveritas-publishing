@@ -7,12 +7,12 @@
 @endsection
 @section('content')
     <style>
-        h1,
-        h2,
-        h3,
-        h4,
-        p,
-        ul li,
+        .pdf-like-content h1,
+        .pdf-like-content h2,
+        .pdf-like-content h3,
+        .pdf-like-content h4,
+        .pdf-like-content p,
+        .pdf-like-content ul li,
         td,
         label {
             font-size: 12px !important;
@@ -23,7 +23,7 @@
             text-align: justify;
         }
     </style>
-    <div class="bg-white mt-3">
+    <div class="bg-white mt-3 pdf-like-content">
         <div class="m-2 p-2">
             <h2 id="research-ethics">1. Research Ethics Policy</h2>
             <h3 id="research-involving-plants">Research Involving Plants:</h3>

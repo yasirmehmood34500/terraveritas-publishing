@@ -16,39 +16,59 @@
                     <input type="text" placeholder="search..." class="form-control">
                 </div>
             </div>
-            <div class="mt-3">
-                @foreach ($journal_editorial_boards as $key => $value)
-                    <div class="d-flex align-items-start gap-3">
 
-                        <!-- Profile Image -->
-                        <img src="https://control.terraveritaspublishing.com/upload/{{ request()->route('abbr', 'NNNN') }}/editorial/{{ @$value->img_name }}" alt=""
-                            class="rounded-circle img-fluid" style="width:100px; height:100px; object-fit:cover;">
+            @php
+                $editorialBoardMembers = collect()
+                    ->merge($grouped_members->get('Editor-in-Chief', []))
+                    ->merge($grouped_members->get('Managing Editor', []));
 
-                        <!-- Profile Info -->
-                        <div>
-                            <p class="mb-1">
-                                <a href="#" class="fw-semibold text-decoration-none text-dark">{{ $value->name }}</a>
-                                &nbsp;
-                                {{-- <a href="#" class="text-decoration-none text-dark">Website</a> --}}
-                            </p>
-                            <p class="fst-italic mb-1">{{ @$value?->journal_editorial_board_type?->name ?? '' }}</p>
-                            <p>{!! $value->detail !!}</p>
-                            {{-- <p class="mb-0">Department of Law, University of Naples Parthenope, Naples, Italy</p>
-                            <p class="mb-0">
-                                <span class="fw-semibold">Interests:</span> sustainability accounting; supply chain
-                                digitalization;
-                                sustainable business models; blockchain and digital platforms; carbon accounting;
-                                sustainability reporting; integrated reporting; GHG protocol
-                            </p>
-                            <p class="mb-0">
-                                <a href="#" class="fw-semibold text-decoration-none text-dark">Special Issues,
-                                    Collections
-                                    and Topics in MDPI journals</a>
-                            </p> --}}
-                        </div>
+                $advisoryCouncilMembers = $grouped_members->get('Advisory Council', []);
+                $editorialAdvisoryBoardMembers = $grouped_members->get('Editorial Advisory Board', []);
+                $subjectEditorsMembers = $grouped_members->get('Subject Editors', []);
+            @endphp
+
+            <div class="mt-4">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" id="editorialTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="editorial-board-tab" data-bs-toggle="tab"
+                            data-bs-target="#editorial-board" type="button" role="tab" aria-controls="editorial-board"
+                            aria-selected="true">Editorial Board</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="advisory-council-tab" data-bs-toggle="tab"
+                            data-bs-target="#advisory-council" type="button" role="tab" aria-controls="advisory-council"
+                            aria-selected="false">Advisory Council</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="editorial-advisory-board-tab" data-bs-toggle="tab"
+                            data-bs-target="#editorial-advisory-board" type="button" role="tab"
+                            aria-controls="editorial-advisory-board" aria-selected="false">Editorial Advisory Board</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="subject-editors-tab" data-bs-toggle="tab"
+                            data-bs-target="#subject-editors" type="button" role="tab" aria-controls="subject-editors"
+                            aria-selected="false">Subject Editors</button>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content mt-3" id="editorialTabsContent">
+                    <div class="tab-pane fade show active" id="editorial-board" role="tabpanel"
+                        aria-labelledby="editorial-board-tab">
+                        @include('journals.partials.editor-list', ['members' => $editorialBoardMembers])
                     </div>
-                    <hr>
-                @endforeach
+                    <div class="tab-pane fade" id="advisory-council" role="tabpanel" aria-labelledby="advisory-council-tab">
+                        @include('journals.partials.editor-list', ['members' => $advisoryCouncilMembers])
+                    </div>
+                    <div class="tab-pane fade" id="editorial-advisory-board" role="tabpanel"
+                        aria-labelledby="editorial-advisory-board-tab">
+                        @include('journals.partials.editor-list', ['members' => $editorialAdvisoryBoardMembers])
+                    </div>
+                    <div class="tab-pane fade" id="subject-editors" role="tabpanel" aria-labelledby="subject-editors-tab">
+                        @include('journals.partials.editor-list', ['members' => $subjectEditorsMembers])
+                    </div>
+                </div>
             </div>
         </div>
     </div>

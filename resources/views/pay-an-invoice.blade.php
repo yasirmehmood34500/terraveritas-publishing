@@ -57,13 +57,6 @@
                 “recipient” in order that TerraVeritas receives the full invoiced amount. We prefer to receive payment in
                 US$, but also accept payments in EUR, USD and GBP.</p>
 
-            <p><strong>Select your preferred currency:</strong></p>
-            <ul>
-                <li>US$</li>
-                <li>EUR</li>
-                <li>GBP</li>
-            </ul>
-
             <h3 id="bank-details">Bank Details</h3>
             <div class="bank-details">
                 <p><strong>IBAN:</strong> CH74 0023 3233 2227 2101 Y</p>

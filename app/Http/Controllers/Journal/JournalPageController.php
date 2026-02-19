@@ -83,10 +83,19 @@ class JournalPageController extends Controller
     public function editor(Request $request, $abbr)
     {
         $journal = Journal::where('abbreviation', $abbr)->firstOrFail();
-        $journal_editorial_boards = JournalEditorialBoard::with('journal_editorial_board_type')->where('journal_id', $journal->id)->orderBy('journal_editorial_board_type_id', 'ASC')->get();
+        $journal_editorial_boards = JournalEditorialBoard::with('journal_editorial_board_type')
+            ->where('journal_id', $journal->id)
+            ->orderBy('journal_editorial_board_type_id', 'ASC')
+            ->get();
+
+        $grouped_members = $journal_editorial_boards->groupBy(function ($item) {
+            return $item->journal_editorial_board_type->name;
+        });
+
         return view('journals.editor')->with([
             'journal' => $journal,
             'journal_editorial_boards' => $journal_editorial_boards,
+            'grouped_members' => $grouped_members,
         ]);
     }
     public function aim_scope(Request $request, $abbr)

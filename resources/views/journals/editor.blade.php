@@ -13,7 +13,7 @@
                     <h4>Members</h4>
                 </div>
                 <div class="col-lg-6">
-                    <input type="text" placeholder="search..." class="form-control">
+                    <!-- <input type="text" placeholder="search..." class="form-control"> -->
                 </div>
             </div>
 

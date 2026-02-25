@@ -11,11 +11,7 @@
                         href="{{ route('journal.editor', ['abbr' => request()->route('abbr')]) }}">Editorial
                         Board</a>
                 </li>
-                <li><a class="text-decoration-none text-dark"
-                        href="{{ route('journal.reviewer_database', ['abbr' => request()->route('abbr')]) }}">Reviewer
-                        Database</a>
-                </li>
-                </li>
+
                 <li><a class="text-decoration-none text-dark"
                         href="{{ route('journal.guide_for_author', ['abbr' => request()->route('abbr')]) }}">Guide
                         for Authors</a></li>
@@ -25,7 +21,6 @@
                 <li><a class="text-decoration-none text-dark"
                         href="{{ route('journal.policy', ['abbr' => request()->route('abbr')]) }}">Journal
                         Policy</a></li>
-                </li>
                 <li><a class="text-decoration-none text-dark"
                         href="{{ route('journal.issue', ['abbr' => request()->route('abbr')]) }}">Current Issue</a>
                 </li>
@@ -47,6 +42,9 @@
                         Processing
                         Charges</a></li>
 
+                <li><a class="text-decoration-none text-dark"
+                        href="{{ route('journal.reviewer_database', ['abbr' => request()->route('abbr')]) }}">Reviewer
+                        Database</a>
                 </li>
                 <li><a class="text-decoration-none text-dark"
                         href="https://{{ request()->route('abbr') }}.terraveritaspublishing.com/login">Track Your

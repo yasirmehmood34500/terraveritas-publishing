@@ -1,4 +1,4 @@
-@if($members->isEmpty())
+@if(count($members) == 0)
     <p class="text-muted">No members found in this category.</p>
 @else
     @foreach ($members as $key => $value)

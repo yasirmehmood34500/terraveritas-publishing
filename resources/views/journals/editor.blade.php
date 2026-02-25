@@ -50,6 +50,11 @@
                             data-bs-target="#subject-editors" type="button" role="tab" aria-controls="subject-editors"
                             aria-selected="false">Subject Editors</button>
                     </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="coi-tab" data-bs-toggle="tab"
+                            data-bs-target="#coi" type="button" role="tab" aria-controls="coi"
+                            aria-selected="false">COI</button>
+                    </li>
                 </ul>
 
                 <!-- Tab panes -->
@@ -67,6 +72,9 @@
                     </div>
                     <div class="tab-pane fade" id="subject-editors" role="tabpanel" aria-labelledby="subject-editors-tab">
                         @include('journals.partials.editor-list', ['members' => $subjectEditorsMembers])
+                    </div>
+                    <div class="tab-pane fade" id="coi" role="tabpanel" aria-labelledby="coi-tab">
+                        <p>All editors and members of advisory council, editorial advisory board and section editors have no financial relationships or interests to disclose.</p>
                     </div>
                 </div>
             </div>

@@ -40,4 +40,5 @@ Route::prefix('journal/{abbr}')->name('journal.')->controller(JournalPageControl
     Route::get('aim-scope', 'aim_scope')->name('aim_scope');
     Route::get('imprint', 'imprint')->name('imprint');
     Route::get('view-paper/{id}', 'view_paper')->name('view_paper');
+    Route::get('reviewer-database', 'reviewer_database')->name('reviewer_database');
 });

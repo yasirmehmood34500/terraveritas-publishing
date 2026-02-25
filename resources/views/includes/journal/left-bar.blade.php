@@ -11,6 +11,10 @@
                         href="{{ route('journal.editor', ['abbr' => request()->route('abbr')]) }}">Editorial
                         Board</a>
                 </li>
+                <li><a class="text-decoration-none text-dark"
+                        href="{{ route('journal.reviewer_database', ['abbr' => request()->route('abbr')]) }}">Reviewer
+                        Database</a>
+                </li>
                 </li>
                 <li><a class="text-decoration-none text-dark"
                         href="{{ route('journal.guide_for_author', ['abbr' => request()->route('abbr')]) }}">Guide

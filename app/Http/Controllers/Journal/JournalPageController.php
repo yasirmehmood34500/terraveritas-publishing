@@ -11,6 +11,7 @@ use App\Models\JournalImprint;
 use App\Models\JournalIndexing;
 use App\Models\JournalIssuePaper;
 use App\Models\JournalOverview;
+use App\Models\JournalReviewer;
 use Illuminate\Http\Request;
 
 class JournalPageController extends Controller
@@ -137,5 +138,16 @@ class JournalPageController extends Controller
     public function policy()
     {
         return view('policy');
+    }
+
+    public function reviewer_database(Request $request, $abbr)
+    {
+        $journal = Journal::where('abbreviation', $abbr)->firstOrFail();
+        $reviewers = JournalReviewer::where('journal_id', $journal->id)->get();
+
+        return view('journals.reviewer-database')->with([
+            'journal' => $journal,
+            'reviewers' => $reviewers,
+        ]);
     }
 }

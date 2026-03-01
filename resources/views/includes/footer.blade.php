@@ -109,17 +109,17 @@
 
                     <a href="" class="text-decoration text-white">Twitter</a><br> -->
                     <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-                        <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
-                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1" class="white-color" role="button"><i
+                                class="fab fa-facebook-f white-color"></i></a>
 
-                        <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
-                                class="fab fa-x"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1" class="white-color" role="button"><i
+                                class="fab fa-x white-color"></i></a>
 
-                        <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
-                                class="fab fa-google"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1" class="white-color" role="button"><i
+                                class="fab fa-google white-color"></i></a>
 
-                        <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
-                                class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1" class="white-color" role="button"><i
+                                class="fab fa-linkedin-in white-color"></i></a>
                     </div>
 
                 </div>

@@ -3,7 +3,7 @@
     <div class="bg-white mt-3">
         <!-- Artilces -->
         <div class="m-2 p-2">
-            <h2 class="mb-3">Journal Imprint</h2>
+            <h1 class="mb-3">Journal Imprint</h1>
             <div class="row">
                 <div class="col-md-12">
                     <table class="table table-striped">

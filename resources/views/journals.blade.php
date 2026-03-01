@@ -6,7 +6,7 @@
     <div class="bg-white mt-3">
         <!-- Artilces -->
         <div class="m-2 p-2">
-            <h2 class="mb-3">TerraVeritas Journal List</h2>
+            <h1 class="mb-3">TerraVeritas Journal List</h1>
             <h4 class="mb-3">{{ count($journals) }} journals</h4>
             <p class="mb-3">TerraVeritas currently publishes {{ count($journals) }} peer-reviewed journals.</p>
 

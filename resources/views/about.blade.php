@@ -3,27 +3,10 @@
     @include('includes.left-bars.about')
 @endsection
 @section('content')
-    <style>
-        .pdf-like-content h1,
-        .pdf-like-content h2,
-        .pdf-like-content h3,
-        .pdf-like-content h4,
-        .pdf-like-content p,
-        .pdf-like-content ul li,
-        td,
-        label {
-            font-size: 12px !important;
-        }
-
-        p,
-        ul li {
-            text-align: justify;
-        }
-    </style>
     <div class="bg-white mt-3 pdf-like-content">
         <!-- Artilces -->
         <div class="m-2 p-2">
-            <h2 class="mb-3">About</h2>
+            <h1 class="mb-3">About</h1>
 
             <div class="hero-section" id="overview">
                 <h2>Overview</h2>

@@ -3,42 +3,11 @@
     @include('includes.left-bars.editorial-support')
 @endsection
 @section('content')
-    <style>
-        h2 {
-            font-family: 'Helvetica', sans-serif;
-            font-size: 24px;
-            color: #333;
-            font-weight: bold;
-        }
-
-        h3 {
-            font-family: 'Helvetica', sans-serif;
-            font-size: 20px;
-            color: #444;
-            font-weight: bold;
-        }
-
-        h4 {
-            font-family: 'Helvetica', sans-serif;
-            font-size: 18px;
-            color: #444;
-            font-weight: bold;
-            margin-top: 1.5rem;
-        }
-
-        p,
-        ul li {
-            text-align: justify;
-        }
-        .pdf-like-content h1, .pdf-like-content h2, .pdf-like-content h3, .pdf-like-content h4, .pdf-like-content p, .pdf-like-content ul li{
-            font-size: 12px !important;
-        }
-    </style>
     <div class="bg-white mt-3 pdf-like-content">
         <!-- Artilces -->
         <div class="m-2 p-2">
             <div class="support-section">
-                <h2 class="mb-3">Editorial Support</h2>
+                <h1 class="mb-3">Editorial Support</h1>
                 <div class="intro-card" id="for-authors">
                     <h3>For Authors</h3>
                     <p>Our strong reputation for delivering high-quality services attracts leading researchers from around

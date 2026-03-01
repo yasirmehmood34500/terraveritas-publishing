@@ -10,7 +10,7 @@
 
 .os-header {
   color: gray;
-  font-size: 14px;
+  /* font-size: 14px; */
 }
 
 .text-muted a {
@@ -59,4 +59,44 @@
 .title-paper:hover {
   color: navy !important;
   text-decoration: underline;
+}
+
+p,
+ul li,
+ol li,
+ul li a,
+ol li a,
+p a,
+span,
+b,
+i,
+strong {
+  text-align: justify;
+  font-family: 'Times New Roman', serif;
+  color: #555 !important;
+  font-size: 16px !important;
+}
+
+
+h1 {
+  font-size: 20px !important;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 18px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Helvetica', sans-serif;
+  color: #333;
+  font-weight: bold;
 }

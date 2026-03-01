@@ -4,47 +4,14 @@
 @endsection
 @section('content')
     <style>
-        .pdf-like-content h2 {
-            font-family: 'Helvetica', sans-serif;
-            font-size: 24px;
-            color: #333;
-            font-weight: bold;
-        }
-
-        .pdf-like-content h3 {
-            font-family: 'Helvetica', sans-serif;
-            font-size: 20px;
-            color: #444;
-            font-weight: bold;
-        }
-
-        .pdf-like-content h4 {
-            font-family: 'Helvetica', sans-serif;
-            font-size: 18px;
-            color: #444;
-            font-weight: bold;
-            margin-top: 1.5rem;
-        }
-
-        .pdf-like-content p,
-        .pdf-like-content li {
-            font-family: 'Times New Roman', serif;
-            font-size: 16px;
-            color: #555;
-        }
 
         .pdf-like-content ul {
             padding-left: 20px;
         }
-
-        p,
-        ul li {
-            text-align: justify;
-        }
     </style>
     <div class="bg-white mt-3 pdf-like-content">
         <div class="m-2 p-2">
-            <h2 class="border-bottom pb-2 mb-4">Editorial Board Responsibilities</h2>
+            <h1 class="border-bottom pb-2 mb-4">Editorial Board Responsibilities</h1>
 
             <h4 id="editor-in-chief">Editor-in-Chief</h4>
             <p>The Editor-in-Chief provides academic leadership and strategic direction for the journal and serves as the

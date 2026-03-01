@@ -3,7 +3,7 @@
     <div class="bg-white mt-3">
         <!-- Artilces -->
         <div class="m-2 p-2">
-            <h2 class="mb-3">{{ @$issue_heading ?? 'Current Issue' }}</h2>
+            <h1 class="mb-3">{{ @$issue_heading ?? 'Current Issue' }}</h1>
             {{-- <p class="mb-3">
                 Accounting and Auditing publishes Special Issues to create collections of papers on specific topics, with
                 the aim of building a community of authors and readers to discuss the latest research and develop new ideas

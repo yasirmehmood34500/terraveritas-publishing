@@ -4,27 +4,6 @@
 @endsection
 @section('content')
     <style>
-        .pdf-like-content h2 {
-            font-family: 'Helvetica', sans-serif;
-            font-size: 1.5rem;
-            color: #333;
-            font-weight: bold;
-        }
-
-        .pdf-like-content h3 {
-            font-family: 'Helvetica', sans-serif;
-            font-size: 1.25rem;
-            color: #444;
-            font-weight: bold;
-        }
-
-        .pdf-like-content p,
-        .pdf-like-content li {
-            font-family: 'Times New Roman', serif;
-            font-size: 1rem;
-            color: #555;
-        }
-
         .pdf-like-content .table thead th {
             background-color: #e9ecef;
             color: #495057;
@@ -36,7 +15,7 @@
     </style>
     <div class="bg-white mt-3 pdf-like-content">
         <div class="m-2 p-2">
-            <h2 id="careers-at-terraveritas-publishing">Careers at TerraVeritas Publishing</h2>
+            <h1 id="careers-at-terraveritas-publishing">Careers at TerraVeritas Publishing</h1>
             <p>TerraVeritas Publishing is always inviting motivated and talented candidates to join our growing team. We
                 advertise job opportunities based on the requirements of the company. If you are passionate about academic
                 publishing and meet our needs and the criteria outlined in the job advertisement, we encourage you to apply

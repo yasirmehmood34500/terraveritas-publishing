@@ -7,7 +7,7 @@
 @section('content')
     <div class="bg-white mt-3">
         <div class="m-2 p-2">
-            <h3>Search Results for "{{ $search }}"</h3>
+            <h1>Search Results for "{{ $search }}"</h1>
             @if ($papers->isEmpty())
                 <p>No search record found.</p>
             @else

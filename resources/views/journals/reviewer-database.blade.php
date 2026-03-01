@@ -3,23 +3,23 @@
     <div class="bg-white mt-3">
         <!-- Articles -->
         <div class="m-2 p-2">
-            <h2 class="mb-3">Reviewer Database</h2>
+            <h1 class="mb-3">Reviewer Database</h1>
 
             <div>
                 @forelse ($reviewers as $reviewer)
                     <div class="reviewer-list-item py-3">
 
                         {{-- Name --}}
-                        <div class="fw-bold mb-1" style="font-size: 1rem;">{{ $reviewer->name }}</div>
+                        <div class="fw-bold mb-1" style="">{{ $reviewer->name }}</div>
 
                         {{-- Department --}}
                         @if(!empty($reviewer->department))
-                            <div class="text-muted mb-1" style="font-size: 0.92rem;">{{ $reviewer->department }}</div>
+                            <div class="text-muted mb-1" style="">{{ $reviewer->department }}</div>
                         @endif
 
                         {{-- Email --}}
                         @if(!empty($reviewer->email))
-                            <div class="mb-1" style="font-size: 0.92rem;">
+                            <div class="mb-1" style="">
                                 <strong>Email:</strong>
                                 <a href="mailto:{{ $reviewer->email }}" class="text-decoration-none">{{ $reviewer->email }}</a>
                             </div>
@@ -27,7 +27,7 @@
 
                         {{-- Official URL --}}
                         @if(!empty($reviewer->official_url))
-                            <div style="font-size: 0.92rem;">
+                            <div style="">
                                 <strong>Official URL:</strong>
                                 <a href="{{ $reviewer->official_url }}" target="_blank" class="text-decoration-none">{{ $reviewer->official_url }}</a>
                             </div>

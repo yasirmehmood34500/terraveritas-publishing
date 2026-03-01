@@ -1,9 +1,9 @@
 <style>
     .logo-text.modern {
-        font-family: 'Poppins', sans-serif;
+        /* font-family: 'Poppins', sans-serif; */
         color: #002b5c;
         /* Strong navy */
-        font-size: 1.2rem;
+        /* font-size: 1.2rem; */
         font-weight: 600;
         /* text-transform: uppercase; */
         letter-spacing: 1px;

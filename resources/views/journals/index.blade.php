@@ -2,11 +2,11 @@
 @section('content')
     <div class="mb-3 mt-3">
         <div class="bg-white p-2">
-            <h3>{{ $journal->name }}</h3>
-            <h5>Aims and Scope</h5>
+            <h1>{{ $journal->name }}</h1>
+            <h2>Aims and Scope</h2>
             @foreach ($journal_overviews as $key => $value)
                 {{-- <h4 class="mb-3">{{ $value->heading }}</h4> --}}
-                <div style="font-size: 14px; text-align: justify;" class="mb-3">{!! $value->detail !!}</div>
+                <div style="text-align: justify;" class="mb-3">{!! $value->detail !!}</div>
             @endforeach
             {{-- <p class="mt-3 mb-3">Accounting and Auditing is an international, peer-reviewed, open access journal on
                 informetrics published quarterly online by MDPI.</p>

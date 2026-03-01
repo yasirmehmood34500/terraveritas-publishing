@@ -9,7 +9,7 @@
 
         <!-- Artilces -->
         <div class="m-2 p-2">
-            <h3>Recent Articles </h3>
+            <h1>Recent Articles </h1>
             @foreach ($recent_papers as $key => $value)
                 <div class="mt-3">
                     {{-- <div class="d-flex justify-content-between mb-2">

@@ -8,7 +8,7 @@
                 <div class="mt-3">
 
                     <small>
-                        <h4>{{ $paper->title }}</h4>
+                        <h1>{{ $paper->title }}</h1>
                     </small><br>
                     @php
                         $authors = str_replace(' and ', ', ', $paper->authors);

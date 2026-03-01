@@ -3,7 +3,7 @@
     <div class="bg-white mt-3">
         <!-- Artilces -->
         <div class="m-2 p-2">
-            <h2 class="mb-3">Editorial Board</h2>
+            <h1 class="mb-3">Editorial Board</h1>
             {{-- <p class="mb-3">Please note that the order in which the Editors appear on this page is alphabetical, and
                 follows the structure of the editorial board presented on the MDPI website under information for editors: <a
                     class="text-decoration-none text-dark" href="">editorial board responsibilities</a>.</p> --}}

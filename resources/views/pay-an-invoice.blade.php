@@ -4,28 +4,6 @@
 @endsection
 @section('content')
     <style>
-        .pdf-like-content h2 {
-            font-family: 'Helvetica', sans-serif;
-            font-size: 1.5rem;
-            color: #333;
-            font-weight: bold;
-            margin-top: 1.5rem;
-        }
-
-        .pdf-like-content h3 {
-            font-family: 'Helvetica', sans-serif;
-            font-size: 1.25rem;
-            color: #444;
-            font-weight: bold;
-        }
-
-        .pdf-like-content p,
-        .pdf-like-content li {
-            font-family: 'Times New Roman', serif;
-            font-size: 1rem;
-            color: #555;
-        }
-
         .pdf-like-content ul {
             padding-left: 20px;
         }
@@ -44,7 +22,7 @@
     </style>
     <div class="bg-white mt-3 pdf-like-content">
         <div class="m-2 p-2">
-            <h2 class="border-bottom pb-2 mb-4">Payment Instructions</h2>
+            <h1 class="border-bottom pb-2 mb-4">Payment Instructions</h1>
 
             <h3 id="payment-by-credit-card">Payment by Credit Card</h3>
             <p>Payment by Credit Card is the preferred payment method. Please click Credit Card and follow the instructions

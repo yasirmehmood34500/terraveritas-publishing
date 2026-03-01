@@ -1,17 +1,5 @@
 @extends('layouts.main')
 @push('style')
-    <style>
-        h2 {
-            font-size: 24px;
-        }
-
-        h3 {
-            font-size: 20px;
-        }
-        p, ul li{
-            text-align: justify;
-        }
-    </style>
 @endpush
 @section('left-bar')
     @include('includes.left-bars.information-for-reviewer')
@@ -23,7 +11,7 @@
     <div class="bg-white mt-3">
         <!-- Artilces -->
         <div class="m-2 p-2">
-            <h2 class="mb-3">Information for Reviewer</h2>
+            <h1 class="mb-3">Information for Reviewer</h1>
 
             <h2 id="what-is-peer-review">What is peer review?</h2>
             <p>Peer review is the process where experts from a specific field or discipline evaluate the quality of a peer’s

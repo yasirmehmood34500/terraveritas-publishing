@@ -2,7 +2,12 @@
 <style>
     .text-decoration {
         text-decoration: none;
-        font-size: 14px;
+        /* font-size: 14px; */
+    }
+
+    .white-color,
+    .white-color span {
+        color: white !important;
     }
 
     .footer-text {
@@ -12,7 +17,7 @@
     }
 </style>
 {{-- @endpush --}}
-<footer class="text-center text-lg-start text-white" style="background-color: #45526e">
+<footer class="text-center text-lg-start " style="background-color: #45526e">
     <div class="container p-4 pb-0">
         <section class="">
             <div class="row">
@@ -24,7 +29,7 @@
                                 style="width: 110px; height: auto;">
 
                         </a>
-                        <div class="footer-text text-decoration">
+                        <div class="footer-text text-decoration white-color">
                             <span>TerraVeritas Publishing (Private) Limited</span>
                             <span>H # 355 St # 10, Umar Block, Riaz ul Jannah</span>
                             <span>Faisalabad - 38000, Pakistan</span>
@@ -41,9 +46,10 @@
                 <hr class="w-100 clearfix d-md-none" />
 
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">Information</h6>
+                    <h6 class="text-uppercase mb-4 font-weight-bold white-color">Information</h6>
 
-                     <a href="{{ route('guide_for_author') }}#article-printing-charges" class="text-decoration text-white"> Article Processing Charges</a><br>
+                    <a href="{{ route('guide_for_author') }}#article-printing-charges"
+                        class="text-decoration text-white"> Article Processing Charges</a><br>
 
 
                     <a href="{{ route('pay_an_invoice') }}" class="text-decoration text-white">Pay an Invoice</a><br>
@@ -63,7 +69,7 @@
                 <hr class="w-100 clearfix d-md-none" />
 
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">
+                    <h6 class="text-uppercase mb-4 font-weight-bold white-color">
                         Guidelines
                     </h6>
 
@@ -91,7 +97,7 @@
                 <hr class="w-100 clearfix d-md-none" />
 
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">
+                    <h6 class="text-uppercase mb-4 font-weight-bold white-color">
                         Follow
                     </h6>
 
